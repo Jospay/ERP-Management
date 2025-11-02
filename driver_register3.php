@@ -155,10 +155,21 @@
                     <input type="text" name="fullname" class="form-control" placeholder="Driver's License Number">
                 </div>
 
-                <!-- Date of Birth & Age -->
-                <div class="mb-3 input-icon">
-                    <i class="bi bi-calendar-date"></i>
-                    <input type="date" name="dob" class="form-control" placeholder="Date of Birth">
+                <div class="mb-3">
+                    <label class="form-label small fw-semibold">Preferred Payout</label>
+                    <div class="d-flex gap-2 justify-content-between">
+                        <button type="button" class="btn btn-primary w-100">Morning</button>
+                        <button type="button" class="btn btn-outline-primary w-100">Evening</button>
+                        <button type="button" class="btn btn-outline-primary w-100">Night</button>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label small fw-semibold">Preferred Payout</label>
+                    <div class="d-flex gap-2 justify-content-between">
+                        <button type="button" class="btn btn-danger w-100">Cash</button>
+                        <button type="button" class="btn btn-warning w-100">Bank</button>
+                    </div>
                 </div>
 
                 <!-- Navigation -->

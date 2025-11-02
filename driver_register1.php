@@ -148,43 +148,64 @@
             </div>
 
             <h6 class="fw-bold mb-3 text-primary">BASIC INFORMATION</h6>
-            <form>
+            <form action="driver_register2.php" method="POST">
+                <!-- Full Name -->
                 <div class="mb-3 input-icon">
                     <i class="bi bi-person"></i>
-                    <input type="text" class="form-control" placeholder="Full Name">
+                    <input type="text" name="fullname" class="form-control" placeholder="Full Name">
                 </div>
 
+                <!-- Date of Birth & Age -->
+                <div class="row">
+                    <div class="col-8">
+                        <div class="mb-3 input-icon">
+                            <i class="bi bi-calendar-date"></i>
+                            <input type="date" name="dob" class="form-control" placeholder="Date of Birth">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3 input-icon">
+                            <i class="bi bi-hourglass-split"></i>
+                            <input type="number" name="age" class="form-control" placeholder="Age" min="0">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gender -->
                 <div class="mb-3 input-icon">
-                    <i class="bi bi-person"></i>
-                    <select class="form-select">
-                        <option selected>Gender</option>
-                        <option>Male</option>
-                        <option>Female</option>
+                    <i class="bi bi-gender-ambiguous"></i>
+                    <select name="gender" class="form-select">
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
                     </select>
                 </div>
 
+                <!-- Contact Number -->
                 <div class="mb-3 input-icon">
                     <i class="bi bi-phone"></i>
-                    <input type="text" class="form-control" placeholder="Contact Number">
+                    <input type="tel" name="contact" class="form-control" placeholder="Contact Number">
                 </div>
 
+                <!-- Email Address -->
                 <div class="mb-3 input-icon">
                     <i class="bi bi-envelope"></i>
-                    <input type="email" class="form-control" placeholder="Email Address">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address">
                 </div>
 
+                <!-- Home Address -->
                 <div class="mb-3 input-icon">
                     <i class="bi bi-house"></i>
-                    <input type="text" class="form-control" placeholder="Home Address">
+                    <input type="text" name="address" class="form-control" placeholder="Home Address">
                 </div>
 
+                <!-- Navigation -->
                 <div class="d-flex justify-content-between align-items-center mt-4">
                     <div class="step-indicator">1 / 5</div>
-                    <a href="driver_register2.php" class="btn btn-primary">
-                        Next
-                    </a>
+                    <a href="driver_register2.php" class="btn btn-primary">Next</a>
                 </div>
             </form>
+
         </div>
     </div>
 
