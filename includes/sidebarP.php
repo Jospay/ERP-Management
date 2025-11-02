@@ -1,23 +1,15 @@
 <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
     <!--begin::Sidebar Brand-->
-    <div class="sidebar-brand">
-        <!--begin::Brand Link-->
-        <a href="./index.html" class="brand-link">
-            <!--begin::Brand Image-->
-            <img
-                src="../../dist/assets/img/AdminLTELogo.png"
-                alt="ERP"
-                class="brand-image opacity-75 shadow" />
-            <!--end::Brand Image-->
-            <!--begin::Brand Text-->
-            <span class="brand-text fw-light">ERP</span>
-            <!--end::Brand Text-->
+    <div class="sidebar-brand" style="background-color: #004A70;">
+        <a href="index.php" class="brand-link">
+            <img src="../../dist/assets/img/AdminLTELogo.png" alt="ERP" class="brand-image opacity-75 shadow" />
+            <span class="brand-text fw-light">Passenger ERP</span>
         </a>
-        <!--end::Brand Link-->
     </div>
     <!--end::Sidebar Brand-->
+
     <!--begin::Sidebar Wrapper-->
-    <div class="sidebar-wrapper">
+    <div class="sidebar-wrapper" style="background-color: #004A70;">
         <nav class="mt-2">
             <ul
                 class="nav sidebar-menu flex-column"
@@ -27,20 +19,17 @@
                 data-accordion="false"
                 id="navigation">
 
-                <!-- Home / Booking -->
+                <!-- Dashboard -->
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="index.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>">
                         <i class="nav-icon bi bi-speedometer2"></i>
-                        <p>
-                            Home (Booking)
-                            <i class="nav-arrow bi bi-chevron-right"></i>
-                        </p>
+                        <p>Dashboard Overview</p>
                     </a>
                 </li>
 
                 <!-- Active Trip -->
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="active.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'active.php' ? 'active' : ''; ?>">
                         <i class="nav-icon bi bi-truck-front-fill"></i>
                         <p>Active Trip</p>
                     </a>
@@ -48,7 +37,7 @@
 
                 <!-- My Rides -->
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="rides.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'rides.php' ? 'active' : ''; ?>">
                         <i class="nav-icon bi bi-car-front-fill"></i>
                         <p>My Rides</p>
                     </a>
@@ -56,7 +45,7 @@
 
                 <!-- Payments -->
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="payments.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'payments.php' ? 'active' : ''; ?>">
                         <i class="nav-icon bi bi-credit-card-2-front-fill"></i>
                         <p>Payments</p>
                     </a>
@@ -64,7 +53,7 @@
 
                 <!-- Promotions -->
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="promotions.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'promotions.php' ? 'active' : ''; ?>">
                         <i class="nav-icon bi bi-gift-fill"></i>
                         <p>Promotions</p>
                     </a>
@@ -72,7 +61,7 @@
 
                 <!-- Support -->
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="support.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'support.php' ? 'active' : ''; ?>">
                         <i class="nav-icon bi bi-headset"></i>
                         <p>Support</p>
                     </a>
@@ -80,45 +69,14 @@
 
                 <!-- Notifications -->
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="notifications.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'notifications.php' ? 'active' : ''; ?>">
                         <i class="nav-icon bi bi-bell-fill"></i>
                         <p>Notifications</p>
                     </a>
                 </li>
+
             </ul>
         </nav>
-
     </div>
-
     <!--end::Sidebar Wrapper-->
 </aside>
-
-<!-- <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon bi bi-box-seam-fill"></i>
-                        <p>
-                            Widgets
-                            <i class="nav-arrow bi bi-chevron-right"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="./widgets/small-box.html" class="nav-link">
-                                <i class="nav-icon bi bi-circle"></i>
-                                <p>Small Box</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./widgets/info-box.html" class="nav-link">
-                                <i class="nav-icon bi bi-circle"></i>
-                                <p>info Box</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./widgets/cards.html" class="nav-link">
-                                <i class="nav-icon bi bi-circle"></i>
-                                <p>Cards</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li> -->
