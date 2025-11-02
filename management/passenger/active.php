@@ -52,7 +52,7 @@
 
                             <div>
                                 <p class="mb-1"><strong>Driver:</strong> John Dela Cruz</p>
-                                <p class="mb-1"><strong>Vehicle:</strong> Toyota Vios (TAXI-102)</p>
+                                <p class="mb-1"><strong>Vehicle:</strong> eCar: (TAXI-102)</p>
                                 <p class="mb-1"><strong>Plate No:</strong> ABC-3456</p>
                                 <p class="mb-0"><strong>Rating:</strong> ⭐ 4.8 / 5</p>
                             </div>
