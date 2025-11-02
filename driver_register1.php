@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Franchise Registration - Account Security</title>
+    <title>Franchise Registration</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -99,8 +99,14 @@
             color: #6c757d;
         }
 
-        .input-icon .form-control {
+        .input-icon .form-control,
+        .input-icon .form-select {
             padding-left: 2.4rem;
+        }
+
+        .step-indicator {
+            font-size: 0.85rem;
+            color: #6c757d;
         }
 
         .btn-primary {
@@ -110,11 +116,6 @@
 
         .btn-primary:hover {
             background: #0a56c2;
-        }
-
-        .step-indicator {
-            font-size: 0.85rem;
-            color: #6c757d;
         }
 
         @media (max-width: 991px) {
@@ -135,8 +136,7 @@
     <div class="main-container">
         <!-- LEFT PANEL -->
         <div class="left-panel">
-            <h3>START YOUR JOURNEY<br>AS AN ERP SYSTEM FRANCHISE PARTNER.</h3>
-            <p class="mt-3">COMPLETE THE FORM BELOW AND ATTACH YOUR REQUIRED DOCUMENTS.</p>
+            <h3>PLEASE FILL OUT THE FORM TO REGISTER AS A DRIVER UNDER ERP SYSTEM FOR CAR BOUNDARY SERVICES - PHILIPPINES. YOUR FRANCHISE WILL VERIFY YOUR ACCOUNT.</h3>
             <a href="/" class="btn btn-outline-light mt-3">RETURN HOME</a>
         </div>
 
@@ -144,25 +144,45 @@
         <div class="right-panel">
             <div class="text-center">
                 <div class="brand-logo">LOGO</div>
-                <div class="header-band">FRANCHISE REGISTRATION</div>
+                <div class="header-band">DRIVER REGISTRATION</div>
             </div>
 
-            <h6 class="fw-bold mb-3 text-primary">ACCOUNT SECURITY</h6>
+            <h6 class="fw-bold mb-3 text-primary">BASIC INFORMATION</h6>
             <form>
                 <div class="mb-3 input-icon">
-                    <i class="bi bi-lock"></i>
-                    <input type="password" class="form-control" placeholder="Password">
+                    <i class="bi bi-person"></i>
+                    <input type="text" class="form-control" placeholder="Full Name">
                 </div>
 
                 <div class="mb-3 input-icon">
-                    <i class="bi bi-lock-fill"></i>
-                    <input type="password" class="form-control" placeholder="Confirm Password">
+                    <i class="bi bi-person"></i>
+                    <select class="form-select">
+                        <option selected>Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+
+                <div class="mb-3 input-icon">
+                    <i class="bi bi-phone"></i>
+                    <input type="text" class="form-control" placeholder="Contact Number">
+                </div>
+
+                <div class="mb-3 input-icon">
+                    <i class="bi bi-envelope"></i>
+                    <input type="email" class="form-control" placeholder="Email Address">
+                </div>
+
+                <div class="mb-3 input-icon">
+                    <i class="bi bi-house"></i>
+                    <input type="text" class="form-control" placeholder="Home Address">
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center mt-4">
-                    <a href="2.php" class="btn btn-outline-secondary">Back</a>
-                    <div class="step-indicator">3 / 4</div>
-                    <a href="4.php" class="btn btn-primary">Next</a>
+                    <div class="step-indicator">1 / 5</div>
+                    <a href="driver_register2.php" class="btn btn-primary">
+                        Next
+                    </a>
                 </div>
             </form>
         </div>

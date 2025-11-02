@@ -138,7 +138,7 @@
         <div class="left-panel">
             <h3>START YOUR JOURNEY<br>AS AN ERP SYSTEM FRANCHISE PARTNER.</h3>
             <p class="mt-3">COMPLETE THE FORM BELOW AND ATTACH YOUR REQUIRED DOCUMENTS.</p>
-            <a href="#" class="btn btn-outline-light mt-3">RETURN HOME</a>
+            <a href="/" class="btn btn-outline-light mt-3">RETURN HOME</a>
         </div>
 
         <!-- RIGHT PANEL -->
@@ -187,7 +187,9 @@
 
                 <div class="d-flex justify-content-between align-items-center mt-4">
                     <div class="step-indicator">1 / 4</div>
-                    <button type="submit" class="btn btn-primary">Next</button>
+                    <a href="2.php" class="btn btn-primary">
+                        Next
+                    </a>
                 </div>
             </form>
         </div>
