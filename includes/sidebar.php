@@ -4,13 +4,13 @@
         <!--begin::Brand Link-->
         <a href="./index.html" class="brand-link">
             <!--begin::Brand Image-->
-            <img
+            <!-- <img
                 src="../../dist/assets/img/AdminLTELogo.png"
                 alt="ERP"
-                class="brand-image opacity-75 shadow" />
+                class="brand-image opacity-75 shadow" /> -->
             <!--end::Brand Image-->
             <!--begin::Brand Text-->
-            <span class="brand-text fw-light">ERP</span>
+            <span class="brand-text fw-light">Super Admin ERP</span>
             <!--end::Brand Text-->
         </a>
         <!--end::Brand Link-->

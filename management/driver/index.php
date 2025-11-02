@@ -16,7 +16,7 @@
     <?php include('../../includes/sidebarD.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
-    <main class="app-main">
+    <main class="app-main" style="background-color: #f0f8ff;">
       <!--begin::App Content Header-->
       <div class="app-content-header">
         <!--begin::Container-->

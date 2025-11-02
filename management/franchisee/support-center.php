@@ -13,7 +13,7 @@
     <?php include('../../includes/navbar.php'); ?>
     <!--end::Header-->
     <!--begin::Sidebar-->
-    <?php include('../../includes/sidebarD.php'); ?>
+    <?php include('../../includes/sidebarFr.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
 <main class="app-main" style="background-color: #f0f8ff;">
@@ -22,12 +22,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Violations & Fines</h3>
+          <h3 class="mb-0">Support Center</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Violations & Fines</li>
+            <li class="breadcrumb-item active" aria-current="page">Support Center</li>
           </ol>
         </div>
       </div>
@@ -40,63 +40,78 @@
     <div class="container-fluid">
 
       <div class="row">
-        <!-- Personal Records -->
+        <!-- Submit Ticket -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <h3 class="card-title"><i class="bi bi-envelope-plus me-2"></i> Submit Ticket</h3>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="ticketType" class="form-label">Issue Type</label>
+                  <select class="form-select" id="ticketType">
+                    <option value="battery">Battery Issue</option>
+                    <option value="driver">Driver Dispute</option>
+                    <option value="payment">Payment Concern</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="ticketDetails" class="form-label">Details</label>
+                  <textarea class="form-control" id="ticketDetails" rows="3" placeholder="Describe the issue..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-success w-100">
+                  <i class="bi bi-send me-1"></i> Submit Ticket
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Track Ticket Status -->
         <div class="col-lg-8">
           <div class="card">
-            <div class="card-header bg-danger text-white">
-              <h3 class="card-title"><i class="bi bi-exclamation-octagon me-2"></i> Personal Records</h3>
+            <div class="card-header bg-warning">
+              <h3 class="card-title"><i class="bi bi-list-check me-2"></i> Ticket Status</h3>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered table-hover align-middle">
                   <thead class="table-light">
                     <tr>
-                      <th>Date</th>
-                      <th>Violation</th>
-                      <th>Fine</th>
+                      <th>Ticket ID</th>
+                      <th>Issue</th>
+                      <th>Date Submitted</th>
                       <th>Status</th>
+                      <th>Last Update</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>2025-10-15</td>
-                      <td>Speeding</td>
-                      <td><span class="badge bg-danger">₱1,500</span></td>
-                      <td><span class="badge bg-warning text-dark">Unpaid</span></td>
+                      <td>#TCK-001</td>
+                      <td>Battery Issue - Low Voltage</td>
+                      <td>2025-11-01</td>
+                      <td><span class="badge bg-warning text-dark">In Progress</span></td>
+                      <td>2025-11-02 10:30 AM</td>
                     </tr>
                     <tr>
-                      <td>2025-09-28</td>
-                      <td>Illegal Parking</td>
-                      <td><span class="badge bg-danger">₱800</span></td>
-                      <td><span class="badge bg-success">Paid</span></td>
+                      <td>#TCK-002</td>
+                      <td>Driver Dispute - Late Arrival</td>
+                      <td>2025-10-30</td>
+                      <td><span class="badge bg-success">Resolved</span></td>
+                      <td>2025-11-01 02:15 PM</td>
                     </tr>
                     <tr>
-                      <td>2025-09-10</td>
-                      <td>No Seatbelt</td>
-                      <td><span class="badge bg-danger">₱500</span></td>
-                      <td><span class="badge bg-success">Paid</span></td>
+                      <td>#TCK-003</td>
+                      <td>Payment Concern - Missing Receipt</td>
+                      <td>2025-10-28</td>
+                      <td><span class="badge bg-danger">Pending</span></td>
+                      <td>2025-10-29 09:00 AM</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pay Fines Online -->
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-header bg-warning">
-              <h3 class="card-title"><i class="bi bi-credit-card me-2"></i> Pay Fines Online</h3>
-            </div>
-            <div class="card-body">
-              <p>You have <strong>1 unpaid fine</strong>. Please settle it online to avoid penalties.</p>
-              <a href="#" class="btn btn-danger w-100 mb-2">
-                <i class="bi bi-wallet2 me-1"></i> Pay Now
-              </a>
-              <a href="#" class="btn btn-outline-secondary w-100">
-                <i class="bi bi-clock-history me-1"></i> View Payment History
-              </a>
             </div>
           </div>
         </div>

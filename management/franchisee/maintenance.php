@@ -13,7 +13,7 @@
     <?php include('../../includes/navbar.php'); ?>
     <!--end::Header-->
     <!--begin::Sidebar-->
-    <?php include('../../includes/sidebarD.php'); ?>
+    <?php include('../../includes/sidebarFr.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
 <main class="app-main" style="background-color: #f0f8ff;">
@@ -22,12 +22,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Violations & Fines</h3>
+          <h3 class="mb-0">Maintenance Tracker</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Violations & Fines</li>
+            <li class="breadcrumb-item active" aria-current="page">Maintenance Tracker</li>
           </ol>
         </div>
       </div>
@@ -40,63 +40,87 @@
     <div class="container-fluid">
 
       <div class="row">
-        <!-- Personal Records -->
+        <!-- Create Service Request -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <h3 class="card-title"><i class="bi bi-wrench-adjustable-circle me-2"></i> Create Service Request</h3>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="vehiclePlate" class="form-label">Vehicle Plate</label>
+                  <input type="text" class="form-control" id="vehiclePlate" placeholder="e.g. ABC-1234">
+                </div>
+                <div class="mb-3">
+                  <label for="issueType" class="form-label">Issue Type</label>
+                  <select class="form-select" id="issueType">
+                    <option value="engine">Engine</option>
+                    <option value="battery">Battery</option>
+                    <option value="tires">Tires</option>
+                    <option value="brakes">Brakes</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="issueDetails" class="form-label">Details</label>
+                  <textarea class="form-control" id="issueDetails" rows="3" placeholder="Describe the issue..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-success w-100">
+                  <i class="bi bi-send me-1"></i> Submit Request
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Track Technician Response & Repair Status -->
         <div class="col-lg-8">
           <div class="card">
-            <div class="card-header bg-danger text-white">
-              <h3 class="card-title"><i class="bi bi-exclamation-octagon me-2"></i> Personal Records</h3>
+            <div class="card-header bg-warning">
+              <h3 class="card-title"><i class="bi bi-tools me-2"></i> Technician Response & Repair Status</h3>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered table-hover align-middle">
                   <thead class="table-light">
                     <tr>
-                      <th>Date</th>
-                      <th>Violation</th>
-                      <th>Fine</th>
+                      <th>Request ID</th>
+                      <th>Vehicle</th>
+                      <th>Issue</th>
+                      <th>Technician</th>
                       <th>Status</th>
+                      <th>Last Update</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>2025-10-15</td>
-                      <td>Speeding</td>
-                      <td><span class="badge bg-danger">₱1,500</span></td>
-                      <td><span class="badge bg-warning text-dark">Unpaid</span></td>
+                      <td>#MT-001</td>
+                      <td>ABC-1234</td>
+                      <td>Engine Overheating</td>
+                      <td>Mark Villanueva</td>
+                      <td><span class="badge bg-warning text-dark">In Progress</span></td>
+                      <td>2025-11-03 10:15 AM</td>
                     </tr>
                     <tr>
-                      <td>2025-09-28</td>
-                      <td>Illegal Parking</td>
-                      <td><span class="badge bg-danger">₱800</span></td>
-                      <td><span class="badge bg-success">Paid</span></td>
+                      <td>#MT-002</td>
+                      <td>XYZ-5678</td>
+                      <td>Battery Replacement</td>
+                      <td>Anna Cruz</td>
+                      <td><span class="badge bg-success">Completed</span></td>
+                      <td>2025-11-02 04:30 PM</td>
                     </tr>
                     <tr>
-                      <td>2025-09-10</td>
-                      <td>No Seatbelt</td>
-                      <td><span class="badge bg-danger">₱500</span></td>
-                      <td><span class="badge bg-success">Paid</span></td>
+                      <td>#MT-003</td>
+                      <td>LMN-9012</td>
+                      <td>Brake Inspection</td>
+                      <td>Jose Ramirez</td>
+                      <td><span class="badge bg-danger">Pending</span></td>
+                      <td>2025-11-01 02:00 PM</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pay Fines Online -->
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-header bg-warning">
-              <h3 class="card-title"><i class="bi bi-credit-card me-2"></i> Pay Fines Online</h3>
-            </div>
-            <div class="card-body">
-              <p>You have <strong>1 unpaid fine</strong>. Please settle it online to avoid penalties.</p>
-              <a href="#" class="btn btn-danger w-100 mb-2">
-                <i class="bi bi-wallet2 me-1"></i> Pay Now
-              </a>
-              <a href="#" class="btn btn-outline-secondary w-100">
-                <i class="bi bi-clock-history me-1"></i> View Payment History
-              </a>
             </div>
           </div>
         </div>

@@ -16,146 +16,122 @@
     <?php include('../../includes/sidebarFr.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
-    <main class="app-main">
-      <!--begin::App Content Header-->
-      <div class="app-content-header">
-        <!--begin::Container-->
-        <div class="container-fluid">
-          <!--begin::Row-->
-          <div class="row">
-            <div class="col-sm-6">
-              <h3 class="mb-0">Dashboard</h3>
-            </div>
-            <div class="col-sm-6">
-              <ol class="breadcrumb float-sm-end">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-              </ol>
-            </div>
-          </div>
-          <!--end::Row-->
+<main class="app-main" style="background-color: #f0f8ff;">
+  <!--begin::App Content Header-->
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3 class="mb-0">Fleet Management</h3>
         </div>
-        <!--end::Container-->
-      </div>
-      <!--end::App Content Header-->
-      <!--begin::App Content-->
-      <div class="app-content">
-        <!--begin::Container-->
-        <div class="container-fluid">
-          <!--begin::Row-->
-          <div class="row">
-            <!--begin::Col-->
-            <div class="row">
-              <div class="col-lg-3 col-6">
-                <div class="small-box text-bg-success">
-                  <div class="inner">
-                    <h3>53<sup class="fs-5">%</sup></h3>
-                    <p>My Active Vehicles</p>
-                  </div>
-                  <i class="bi bi-person-badge small-box-icon"></i>
-                  <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                    More info <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-6">
-                <div class="small-box text-bg-warning">
-                  <div class="inner">
-                    <h3>44</h3>
-                    <p>My Active Drivers</p>
-                  </div>
-                  <i class="bi bi-building small-box-icon text-dark"></i>
-                  <a href="#" class="small-box-footer link-dark link-underline-opacity-0 link-underline-opacity-50-hover">
-                    More info <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-6">
-                <div class="small-box text-bg-danger">
-                  <div class="inner">
-                    <h3>₱65k</h3>
-                    <p>Daily Earnings</p>
-                  </div>
-                  <i class="bi bi-cash-stack small-box-icon"></i>
-                  <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                    More info <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-6">
-                <div class="small-box text-bg-danger">
-                  <div class="inner">
-                    <h3>12</h3>
-                    <p>Pending Boundary Due</p>
-                  </div>
-                  <i class="bi bi-clock-history small-box-icon"></i>
-                  <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                    More info <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-6">
-                <div class="small-box text-bg-primary">
-                  <div class="inner">
-                    <h3>150</h3>
-                    <p> Vehicles Under Maintenance</p>
-                  </div>
-                  <i class="bi bi-truck small-box-icon"></i>
-                  <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                    More info <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!--end::Col-->
-          </div>
-          <!--end::Row-->
-          <!--begin::Row-->
-          <div class="row">
-            <!-- Start col -->
-            <div class="col-lg-6 connectedSortable">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <h3 class="card-title">Sales Value</h3>
-                </div>
-                <div class="card-body">
-                  <div id="revenue-chart"></div>
-                </div>
-              </div>
-              <!-- /.card -->
-              <!-- DIRECT CHAT -->
-
-              <!-- /.direct-chat -->
-            </div>
-            <!-- /.Start col -->
-            <!-- Start col -->
-
-            <div class="col-lg-6 connectedSortable">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <h3 class="card-title">World Map</h3>
-                </div>
-                <div class="card-body">
-                  <div id="world-map" style="height: 300px; border-radius: 8px;"></div>
-                </div>
-              </div>
-            </div>
-
-
-
-            <!-- /.Start col -->
-          </div>
-          <!-- /.row (main row) -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-end">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Fleet Management</li>
+          </ol>
         </div>
-        <!--end::Container-->
       </div>
-      <!--end::App Content-->
-    </main>
+    </div>
+  </div>
+  <!--end::App Content Header-->
+
+  <!--begin::App Content-->
+  <div class="app-content">
+    <div class="container-fluid">
+
+      <div class="row">
+        <!-- Add New Vehicle Request -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <h3 class="card-title"><i class="bi bi-plus-circle me-2"></i> Add New Vehicle</h3>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="vehicleModel" class="form-label">Vehicle Model</label>
+                  <input type="text" class="form-control" id="vehicleModel" placeholder="e.g. Toyota Vios 2022">
+                </div>
+                <div class="mb-3">
+                  <label for="plateNumber" class="form-label">Plate Number</label>
+                  <input type="text" class="form-control" id="plateNumber" placeholder="e.g. ABC-1234">
+                </div>
+                <button type="submit" class="btn btn-success w-100">
+                  <i class="bi bi-check-circle me-1"></i> Submit Request
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vehicle Status Management -->
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-header bg-warning">
+              <h3 class="card-title"><i class="bi bi-gear me-2"></i> Vehicle Status</h3>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Vehicle</th>
+                      <th>Plate</th>
+                      <th>Status</th>
+                      <th>Battery</th>
+                      <th>GPS</th>
+                      <th>Driver</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Toyota Vios</td>
+                      <td>ABC-1234</td>
+                      <td><span class="badge bg-success">Active</span></td>
+                      <td><span class="badge bg-info">85%</span></td>
+                      <td><span class="badge bg-success">Online</span></td>
+                      <td>Juan Dela Cruz</td>
+                      <td>
+                        <button class="btn btn-sm btn-warning"><i class="bi bi-tools me-1"></i> Mark Maintenance</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Mitsubishi L300</td>
+                      <td>XYZ-5678</td>
+                      <td><span class="badge bg-warning text-dark">In Maintenance</span></td>
+                      <td><span class="badge bg-danger">40%</span></td>
+                      <td><span class="badge bg-secondary">Offline</span></td>
+                      <td>Maria Santos</td>
+                      <td>
+                        <button class="btn btn-sm btn-success"><i class="bi bi-check-circle me-1"></i> Mark Active</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Nissan NV350</td>
+                      <td>LMN-9012</td>
+                      <td><span class="badge bg-success">Active</span></td>
+                      <td><span class="badge bg-info">92%</span></td>
+                      <td><span class="badge bg-success">Online</span></td>
+                      <td>Carlos Reyes</td>
+                      <td>
+                        <button class="btn btn-sm btn-warning"><i class="bi bi-tools me-1"></i> Mark Maintenance</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div><!-- /.container-fluid -->
+  </div>
+  <!--end::App Content-->
+</main>
+
     <!--end::App Main-->
     <!--begin::Footer-->
 

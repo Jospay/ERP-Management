@@ -13,7 +13,7 @@
     <?php include('../../includes/navbar.php'); ?>
     <!--end::Header-->
     <!--begin::Sidebar-->
-    <?php include('../../includes/sidebarD.php'); ?>
+    <?php include('../../includes/sidebarFr.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
 <main class="app-main" style="background-color: #f0f8ff;">
@@ -22,12 +22,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Violations & Fines</h3>
+          <h3 class="mb-0">Driver Management</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Violations & Fines</li>
+            <li class="breadcrumb-item active" aria-current="page">Driver Management</li>
           </ol>
         </div>
       </div>
@@ -40,63 +40,87 @@
     <div class="container-fluid">
 
       <div class="row">
-        <!-- Personal Records -->
+        <!-- Add / Suspend Driver -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <h3 class="card-title"><i class="bi bi-person-plus me-2"></i> Add / Suspend Driver</h3>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="driverName" class="form-label">Driver Name</label>
+                  <input type="text" class="form-control" id="driverName" placeholder="e.g. Juan Dela Cruz">
+                </div>
+                <div class="mb-3">
+                  <label for="driverBranch" class="form-label">Branch</label>
+                  <input type="text" class="form-control" id="driverBranch" placeholder="e.g. Angeles City">
+                </div>
+                <div class="mb-3">
+                  <label for="driverStatus" class="form-label">Status</label>
+                  <select class="form-select" id="driverStatus">
+                    <option value="active">Active</option>
+                    <option value="suspended">Suspended</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-success w-100 mb-2">
+                  <i class="bi bi-check-circle me-1"></i> Save Driver
+                </button>
+                <button type="button" class="btn btn-danger w-100">
+                  <i class="bi bi-slash-circle me-1"></i> Suspend Driver
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Driver Attendance & Performance -->
         <div class="col-lg-8">
           <div class="card">
-            <div class="card-header bg-danger text-white">
-              <h3 class="card-title"><i class="bi bi-exclamation-octagon me-2"></i> Personal Records</h3>
+            <div class="card-header bg-warning">
+              <h3 class="card-title"><i class="bi bi-clipboard-check me-2"></i> Attendance & Performance</h3>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered table-hover align-middle">
                   <thead class="table-light">
                     <tr>
-                      <th>Date</th>
-                      <th>Violation</th>
-                      <th>Fine</th>
-                      <th>Status</th>
+                      <th>Driver</th>
+                      <th>Branch</th>
+                      <th>Attendance</th>
+                      <th>Trips Completed</th>
+                      <th>Performance</th>
+                      <th>Rating</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>2025-10-15</td>
-                      <td>Speeding</td>
-                      <td><span class="badge bg-danger">₱1,500</span></td>
-                      <td><span class="badge bg-warning text-dark">Unpaid</span></td>
+                      <td>Juan Dela Cruz</td>
+                      <td>Angeles City</td>
+                      <td><span class="badge bg-success">Present</span></td>
+                      <td>15</td>
+                      <td><span class="badge bg-success">Excellent</span></td>
+                      <td><span class="text-warning">★ ★ ★ ★ ★</span></td>
                     </tr>
                     <tr>
-                      <td>2025-09-28</td>
-                      <td>Illegal Parking</td>
-                      <td><span class="badge bg-danger">₱800</span></td>
-                      <td><span class="badge bg-success">Paid</span></td>
+                      <td>Maria Santos</td>
+                      <td>San Fernando</td>
+                      <td><span class="badge bg-danger">Absent</span></td>
+                      <td>0</td>
+                      <td><span class="badge bg-secondary">N/A</span></td>
+                      <td><span class="text-muted">No Rating</span></td>
                     </tr>
                     <tr>
-                      <td>2025-09-10</td>
-                      <td>No Seatbelt</td>
-                      <td><span class="badge bg-danger">₱500</span></td>
-                      <td><span class="badge bg-success">Paid</span></td>
+                      <td>Carlos Reyes</td>
+                      <td>Mabalacat</td>
+                      <td><span class="badge bg-success">Present</span></td>
+                      <td>12</td>
+                      <td><span class="badge bg-warning text-dark">Good</span></td>
+                      <td><span class="text-warning">★ ★ ★ ★ ☆</span></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pay Fines Online -->
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-header bg-warning">
-              <h3 class="card-title"><i class="bi bi-credit-card me-2"></i> Pay Fines Online</h3>
-            </div>
-            <div class="card-body">
-              <p>You have <strong>1 unpaid fine</strong>. Please settle it online to avoid penalties.</p>
-              <a href="#" class="btn btn-danger w-100 mb-2">
-                <i class="bi bi-wallet2 me-1"></i> Pay Now
-              </a>
-              <a href="#" class="btn btn-outline-secondary w-100">
-                <i class="bi bi-clock-history me-1"></i> View Payment History
-              </a>
             </div>
           </div>
         </div>

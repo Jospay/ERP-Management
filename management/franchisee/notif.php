@@ -13,7 +13,7 @@
     <?php include('../../includes/navbar.php'); ?>
     <!--end::Header-->
     <!--begin::Sidebar-->
-    <?php include('../../includes/sidebarD.php'); ?>
+    <?php include('../../includes/sidebarFr.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
 <main class="app-main" style="background-color: #f0f8ff;">
@@ -22,12 +22,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Violations & Fines</h3>
+          <h3 class="mb-0">Notifications</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Violations & Fines</li>
+            <li class="breadcrumb-item active" aria-current="page">Notifications</li>
           </ol>
         </div>
       </div>
@@ -40,63 +40,52 @@
     <div class="container-fluid">
 
       <div class="row">
-        <!-- Personal Records -->
-        <div class="col-lg-8">
+        <div class="col-12">
           <div class="card">
-            <div class="card-header bg-danger text-white">
-              <h3 class="card-title"><i class="bi bi-exclamation-octagon me-2"></i> Personal Records</h3>
+            <div class="card-header bg-info text-white">
+              <h3 class="card-title"><i class="bi bi-bell me-2"></i> Recent Notifications</h3>
             </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered table-hover align-middle">
-                  <thead class="table-light">
-                    <tr>
-                      <th>Date</th>
-                      <th>Violation</th>
-                      <th>Fine</th>
-                      <th>Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>2025-10-15</td>
-                      <td>Speeding</td>
-                      <td><span class="badge bg-danger">₱1,500</span></td>
-                      <td><span class="badge bg-warning text-dark">Unpaid</span></td>
-                    </tr>
-                    <tr>
-                      <td>2025-09-28</td>
-                      <td>Illegal Parking</td>
-                      <td><span class="badge bg-danger">₱800</span></td>
-                      <td><span class="badge bg-success">Paid</span></td>
-                    </tr>
-                    <tr>
-                      <td>2025-09-10</td>
-                      <td>No Seatbelt</td>
-                      <td><span class="badge bg-danger">₱500</span></td>
-                      <td><span class="badge bg-success">Paid</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
+            <div class="card-body p-0">
+              <ul class="list-group list-group-flush">
+                <!-- Payment Due Alert -->
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold"><i class="bi bi-credit-card text-danger me-1"></i> Payment Due</div>
+                    Boundary payment of <strong>₱2,000</strong> is overdue. Please settle immediately.
+                  </div>
+                  <span class="badge bg-danger rounded-pill">Overdue</span>
+                </li>
 
-        <!-- Pay Fines Online -->
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-header bg-warning">
-              <h3 class="card-title"><i class="bi bi-credit-card me-2"></i> Pay Fines Online</h3>
+                <!-- Maintenance Reminder -->
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold"><i class="bi bi-tools text-warning me-1"></i> Maintenance Reminder</div>
+                    Vehicle <strong>XYZ-5678</strong> is scheduled for maintenance tomorrow.
+                  </div>
+                  <span class="badge bg-warning text-dark rounded-pill">Reminder</span>
+                </li>
+
+                <!-- New Driver Request Status -->
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold"><i class="bi bi-person-check text-success me-1"></i> Driver Request Approved</div>
+                    New driver <strong>Maria Santos</strong> has been approved and added to your fleet.
+                  </div>
+                  <span class="badge bg-success rounded-pill">Approved</span>
+                </li>
+
+                <!-- General Info -->
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold"><i class="bi bi-info-circle text-info me-1"></i> System Notice</div>
+                    A new version of the fleet management app is available. Please update soon.
+                  </div>
+                  <span class="badge bg-info rounded-pill">New</span>
+                </li>
+              </ul>
             </div>
-            <div class="card-body">
-              <p>You have <strong>1 unpaid fine</strong>. Please settle it online to avoid penalties.</p>
-              <a href="#" class="btn btn-danger w-100 mb-2">
-                <i class="bi bi-wallet2 me-1"></i> Pay Now
-              </a>
-              <a href="#" class="btn btn-outline-secondary w-100">
-                <i class="bi bi-clock-history me-1"></i> View Payment History
-              </a>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-list-ul me-1"></i> View All Notifications</a>
             </div>
           </div>
         </div>

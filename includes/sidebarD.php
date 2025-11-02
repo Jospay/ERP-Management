@@ -1,23 +1,23 @@
 <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
     <!--begin::Sidebar Brand-->
-    <div class="sidebar-brand">
+    <div class="sidebar-brand" style="background-color: #004A70;">
         <!--begin::Brand Link-->
         <a href="./index.html" class="brand-link">
             <!--begin::Brand Image-->
-            <img
+            <!-- <img
                 src="../../dist/assets/img/AdminLTELogo.png"
                 alt="ERP"
-                class="brand-image opacity-75 shadow" />
+                class="brand-image opacity-75 shadow" /> -->
             <!--end::Brand Image-->
             <!--begin::Brand Text-->
-            <span class="brand-text fw-light">ERP</span>
+            <span class="brand-text fw-light">Driver ERP</span>
             <!--end::Brand Text-->
         </a>
         <!--end::Brand Link-->
     </div>
     <!--end::Sidebar Brand-->
     <!--begin::Sidebar Wrapper-->
-    <div class="sidebar-wrapper">
+    <div class="sidebar-wrapper" style="background-color: #004A70;">
         <nav class="mt-2">
             <ul
                 class="nav sidebar-menu flex-column"

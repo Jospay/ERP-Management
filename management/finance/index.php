@@ -16,7 +16,7 @@
     <?php include('../../includes/sidebarFi.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
-    <main class="app-main">
+    <main class="app-main" style="background-color: #f0f8ff;">
       <!--begin::App Content Header-->
       <div class="app-content-header">
         <!--begin::Container-->
@@ -49,7 +49,7 @@
               <div class="col-lg-3 col-6">
                 <div class="small-box text-bg-primary">
                   <div class="inner">
-                    <h3>150</h3>
+                    <h3>₱8,000</h3>
                     <p>Total Revenue (today)</p>
                   </div>
                   <i class="bi bi-truck small-box-icon"></i>
@@ -75,7 +75,7 @@
               <div class="col-lg-3 col-6">
                 <div class="small-box text-bg-warning">
                   <div class="inner">
-                    <h3>44</h3>
+                    <h3>₱27,000</h3>
                     <p>Expenses (this week)</p>
                   </div>
                   <i class="bi bi-building small-box-icon text-dark"></i>
@@ -88,7 +88,7 @@
               <div class="col-lg-3 col-6">
                 <div class="small-box text-bg-danger">
                   <div class="inner">
-                    <h3>₱65k</h3>
+                    <h3>₱65,000</h3>
                     <p>Outstanding Payments</p>
                   </div>
                   <i class="bi bi-cash-stack small-box-icon"></i>
@@ -108,7 +108,7 @@
             <div class="col-lg-6 connectedSortable">
               <div class="card mb-4">
                 <div class="card-header">
-                  <h3 class="card-title">Sales Value</h3>
+                  <h3 class="card-title">Revenue vs Expenses Graph</h3>
                 </div>
                 <div class="card-body">
                   <div id="revenue-chart"></div>
@@ -125,7 +125,7 @@
             <div class="col-lg-6 connectedSortable">
               <div class="card mb-4">
                 <div class="card-header">
-                  <h3 class="card-title">World Map</h3>
+                  <h3 class="card-title">Top 5 Franchise Contributors</h3>
                 </div>
                 <div class="card-body">
                   <div id="world-map" style="height: 300px; border-radius: 8px;"></div>
@@ -205,12 +205,12 @@
 
     const sales_chart_options = {
       series: [{
-          name: 'Digital Goods',
-          data: [28, 48, 40, 19, 86, 27, 90],
+          name: 'Revenue',
+          data: [54, 68, 73, 82, 76, 67, 90],
         },
         {
-          name: 'Electronics',
-          data: [65, 59, 80, 81, 56, 55, 40],
+          name: 'Expenses',
+          data: [28, 59, 51, 61, 56, 55, 40],
         },
       ],
       chart: {
@@ -355,26 +355,34 @@
 
   <script>
     // Initialize the map
-    var map = L.map('world-map').setView([20, 0], 2); // center of the world
+    var map = L.map('world-map').setView([14.5995, 120.9842], 13);
 
     // Add OpenStreetMap tile layer
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 18,
+      maxZoom: 13,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
     // Example: Add a few sample markers (you can make these dynamic via PHP)
     const markers = [{
-        name: "Manila, PH",
+        name: "Franchise 1",
         coords: [14.5995, 120.9842]
       },
       {
-        name: "Tokyo, JP",
-        coords: [35.6762, 139.6503]
+        name: "Franchise 2",
+        coords: [14.5826, 120.9790]
       },
       {
-        name: "New York, US",
-        coords: [40.7128, -74.0060]
+        name: "Franchise 3",
+        coords: [14.5995, 120.9634]
+      },
+      {
+        name: "Franchise 4",
+        coords: [14.5896, 120.9810]
+      },
+      {
+        name: "Franchise 5",
+        coords: [14.6090, 120.9890]
       },
     ];
 

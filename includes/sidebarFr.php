@@ -1,23 +1,23 @@
 <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
     <!--begin::Sidebar Brand-->
-    <div class="sidebar-brand">
+    <div class="sidebar-brand" style="background-color: #004A70;">
         <!--begin::Brand Link-->
         <a href="./index.html" class="brand-link">
             <!--begin::Brand Image-->
-            <img
+            <!-- <img
                 src="../../dist/assets/img/AdminLTELogo.png"
                 alt="ERP"
-                class="brand-image opacity-75 shadow" />
+                class="brand-image opacity-75 shadow" /> -->
             <!--end::Brand Image-->
             <!--begin::Brand Text-->
-            <span class="brand-text fw-light">ERP</span>
+            <span class="brand-text fw-light">Franchisee ERP</span>
             <!--end::Brand Text-->
         </a>
         <!--end::Brand Link-->
     </div>
     <!--end::Sidebar Brand-->
     <!--begin::Sidebar Wrapper-->
-    <div class="sidebar-wrapper">
+    <div class="sidebar-wrapper" style="background-color: #004A70;">
         <nav class="mt-2">
             <ul
                 class="nav sidebar-menu flex-column"
@@ -27,7 +27,7 @@
                 data-accordion="false"
                 id="navigation">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="../franchisee/index.php" class="nav-link active">
                         <i class="nav-icon bi bi-speedometer2"></i>
                         <p>
                             Dashboard
@@ -37,56 +37,56 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/fleet-manage.php" class="nav-link">
                         <i class="nav-icon bi bi-truck"></i>
                         <p>Fleet Management</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/driver-manage.php" class="nav-link">
                         <i class="nav-icon bi bi-person-badge"></i>
                         <p>Driver Management</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/boundary.php" class="nav-link">
                         <i class="nav-icon bi bi-cash-coin"></i>
                         <p>Boundary Payments</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/maintenance.php" class="nav-link">
                         <i class="nav-icon bi bi-tools"></i>
                         <p>Maintenance Tracker</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/revenue.php" class="nav-link">
                         <i class="nav-icon bi bi-graph-up-arrow"></i>
                         <p>Revenue & Expenses</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/report.php" class="nav-link">
                         <i class="nav-icon bi bi-bar-chart"></i>
                         <p>Reports</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/support-center.php" class="nav-link">
                         <i class="nav-icon bi bi-headset"></i>
                         <p>Support Center</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/notif.php" class="nav-link">
                         <i class="nav-icon bi bi-bell"></i>
                         <p>Notifications</p>
                     </a>

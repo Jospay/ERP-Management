@@ -13,7 +13,7 @@
     <?php include('../../includes/navbar.php'); ?>
     <!--end::Header-->
     <!--begin::Sidebar-->
-    <?php include('../../includes/sidebarD.php'); ?>
+    <?php include('../../includes/sidebarFr.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
 <main class="app-main" style="background-color: #f0f8ff;">
@@ -22,12 +22,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Violations & Fines</h3>
+          <h3 class="mb-0">Reports</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Violations & Fines</li>
+            <li class="breadcrumb-item active" aria-current="page">Reports</li>
           </ol>
         </div>
       </div>
@@ -40,41 +40,67 @@
     <div class="container-fluid">
 
       <div class="row">
-        <!-- Personal Records -->
-        <div class="col-lg-8">
+        <!-- Monthly Fleet Summary -->
+        <div class="col-lg-6">
           <div class="card">
-            <div class="card-header bg-danger text-white">
-              <h3 class="card-title"><i class="bi bi-exclamation-octagon me-2"></i> Personal Records</h3>
+            <div class="card-header bg-primary text-white">
+              <h3 class="card-title"><i class="bi bi-graph-up-arrow me-2"></i> Monthly Fleet Summary</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Total Trips
+                  <span class="badge bg-success rounded-pill">8,950</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Total Income
+                  <span class="badge bg-primary rounded-pill">₱1,850,000</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Average Utilization Rate
+                  <span class="badge bg-info rounded-pill">72%</span>
+                </li>
+              </ul>
+              <div id="monthly-fleet-chart" style="height:250px;" class="mt-3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Driver Performance Ranking -->
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header bg-success text-white">
+              <h3 class="card-title"><i class="bi bi-trophy me-2"></i> Driver Performance Ranking</h3>
             </div>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-bordered table-hover align-middle">
+                <table class="table table-striped table-hover align-middle">
                   <thead class="table-light">
                     <tr>
-                      <th>Date</th>
-                      <th>Violation</th>
-                      <th>Fine</th>
-                      <th>Status</th>
+                      <th>Rank</th>
+                      <th>Driver</th>
+                      <th>Trips</th>
+                      <th>Rating</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>2025-10-15</td>
-                      <td>Speeding</td>
-                      <td><span class="badge bg-danger">₱1,500</span></td>
-                      <td><span class="badge bg-warning text-dark">Unpaid</span></td>
+                      <td>1</td>
+                      <td>Juan Dela Cruz</td>
+                      <td>420</td>
+                      <td><span class="text-warning">★ ★ ★ ★ ★</span></td>
                     </tr>
                     <tr>
-                      <td>2025-09-28</td>
-                      <td>Illegal Parking</td>
-                      <td><span class="badge bg-danger">₱800</span></td>
-                      <td><span class="badge bg-success">Paid</span></td>
+                      <td>2</td>
+                      <td>Maria Santos</td>
+                      <td>395</td>
+                      <td><span class="text-warning">★ ★ ★ ★ ☆</span></td>
                     </tr>
                     <tr>
-                      <td>2025-09-10</td>
-                      <td>No Seatbelt</td>
-                      <td><span class="badge bg-danger">₱500</span></td>
-                      <td><span class="badge bg-success">Paid</span></td>
+                      <td>3</td>
+                      <td>Carlos Reyes</td>
+                      <td>380</td>
+                      <td><span class="text-warning">★ ★ ★ ★ ☆</span></td>
                     </tr>
                   </tbody>
                 </table>
@@ -82,21 +108,38 @@
             </div>
           </div>
         </div>
+      </div>
+      <!-- /.row -->
 
-        <!-- Pay Fines Online -->
-        <div class="col-lg-4">
+      <!-- Income/Expense Breakdown -->
+      <div class="row mt-4">
+        <div class="col-12">
           <div class="card">
             <div class="card-header bg-warning">
-              <h3 class="card-title"><i class="bi bi-credit-card me-2"></i> Pay Fines Online</h3>
+              <h3 class="card-title"><i class="bi bi-pie-chart me-2"></i> Income / Expense Breakdown</h3>
             </div>
             <div class="card-body">
-              <p>You have <strong>1 unpaid fine</strong>. Please settle it online to avoid penalties.</p>
-              <a href="#" class="btn btn-danger w-100 mb-2">
-                <i class="bi bi-wallet2 me-1"></i> Pay Now
-              </a>
-              <a href="#" class="btn btn-outline-secondary w-100">
-                <i class="bi bi-clock-history me-1"></i> View Payment History
-              </a>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Total Income
+                      <span class="badge bg-success rounded-pill">₱1,850,000</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Total Expenses
+                      <span class="badge bg-danger rounded-pill">₱720,000</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Net Profit
+                      <span class="badge bg-primary rounded-pill">₱1,130,000</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <div id="income-expense-chart" style="height:250px;"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

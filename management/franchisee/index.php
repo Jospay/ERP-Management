@@ -13,7 +13,7 @@
     <?php include('../../includes/navbar.php'); ?>
     <!--end::Header-->
     <!--begin::Sidebar-->
-    <?php include('../../includes/sidebarD.php'); ?>
+    <?php include('../../includes/sidebarFr.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
 <main class="app-main" style="background-color: #f0f8ff;">
@@ -22,12 +22,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Violations & Fines</h3>
+          <h3 class="mb-0">Dashboard</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Violations & Fines</li>
+            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
           </ol>
         </div>
       </div>
@@ -39,69 +39,119 @@
   <div class="app-content">
     <div class="container-fluid">
 
+      <!-- Welcome Message -->
+      <div class="alert alert-info mb-4" role="alert">
+        <h5 class="mb-0">👋 Welcome back, <strong>MetroFleet Transport Inc.</strong>!</h5>
+        <p class="mb-0">Here’s an overview of your fleet performance today.</p>
+      </div>
+
+      <!-- KPI Cards -->
       <div class="row">
-        <!-- Personal Records -->
-        <div class="col-lg-8">
-          <div class="card">
-            <div class="card-header bg-danger text-white">
-              <h3 class="card-title"><i class="bi bi-exclamation-octagon me-2"></i> Personal Records</h3>
+        <!-- Active Vehicles -->
+        <div class="col-lg-3 col-6">
+          <div class="small-box text-bg-success">
+            <div class="inner">
+              <h3>53<sup class="fs-5">%</sup></h3>
+              <p>My Active Vehicles</p>
             </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered table-hover align-middle">
-                  <thead class="table-light">
-                    <tr>
-                      <th>Date</th>
-                      <th>Violation</th>
-                      <th>Fine</th>
-                      <th>Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>2025-10-15</td>
-                      <td>Speeding</td>
-                      <td><span class="badge bg-danger">₱1,500</span></td>
-                      <td><span class="badge bg-warning text-dark">Unpaid</span></td>
-                    </tr>
-                    <tr>
-                      <td>2025-09-28</td>
-                      <td>Illegal Parking</td>
-                      <td><span class="badge bg-danger">₱800</span></td>
-                      <td><span class="badge bg-success">Paid</span></td>
-                    </tr>
-                    <tr>
-                      <td>2025-09-10</td>
-                      <td>No Seatbelt</td>
-                      <td><span class="badge bg-danger">₱500</span></td>
-                      <td><span class="badge bg-success">Paid</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+            <i class="bi bi-truck small-box-icon"></i>
+            <a href="#" class="small-box-footer">More info <i class="bi bi-link-45deg"></i></a>
           </div>
         </div>
 
-        <!-- Pay Fines Online -->
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-header bg-warning">
-              <h3 class="card-title"><i class="bi bi-credit-card me-2"></i> Pay Fines Online</h3>
+        <!-- Active Drivers -->
+        <div class="col-lg-3 col-6">
+          <div class="small-box text-bg-warning">
+            <div class="inner">
+              <h3>44</h3>
+              <p>My Active Drivers</p>
             </div>
-            <div class="card-body">
-              <p>You have <strong>1 unpaid fine</strong>. Please settle it online to avoid penalties.</p>
-              <a href="#" class="btn btn-danger w-100 mb-2">
-                <i class="bi bi-wallet2 me-1"></i> Pay Now
-              </a>
-              <a href="#" class="btn btn-outline-secondary w-100">
-                <i class="bi bi-clock-history me-1"></i> View Payment History
-              </a>
+            <i class="bi bi-person-badge small-box-icon"></i>
+            <a href="#" class="small-box-footer">More info <i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <!-- Daily Earnings -->
+        <div class="col-lg-3 col-6">
+          <div class="small-box text-bg-danger">
+            <div class="inner">
+              <h3>₱65,000</h3>
+              <p>Daily Earnings</p>
             </div>
+            <i class="bi bi-cash-stack small-box-icon"></i>
+            <a href="#" class="small-box-footer">More info <i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <!-- Pending Boundary Due -->
+        <div class="col-lg-3 col-6">
+          <div class="small-box text-bg-danger">
+            <div class="inner">
+              <h3>12</h3>
+              <p>Pending Boundary Due</p>
+            </div>
+            <i class="bi bi-credit-card small-box-icon"></i>
+            <a href="#" class="small-box-footer">More info <i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <!-- Vehicles Under Maintenance -->
+        <div class="col-lg-3 col-6">
+          <div class="small-box text-bg-primary">
+            <div class="inner">
+              <h3>150</h3>
+              <p>Vehicles Under Maintenance</p>
+            </div>
+            <i class="bi bi-tools small-box-icon"></i>
+            <a href="#" class="small-box-footer">More info <i class="bi bi-link-45deg"></i></a>
           </div>
         </div>
       </div>
       <!-- /.row -->
+
+      <!-- Summary Graphs -->
+      <div class="row">
+        <!-- Revenue & Expenses -->
+        <div class="col-lg-6 connectedSortable">
+          <div class="card mb-4">
+            <div class="card-header">
+              <h3 class="card-title">Revenue & Expenses (Weekly)</h3>
+            </div>
+            <div class="card-body">
+              <div id="revenue-expenses-chart"></div>
+              <p class="mt-3 text-muted small">Sample Data: Revenue ₱450k | Expenses ₱320k</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trips Completed -->
+        <div class="col-lg-6 connectedSortable">
+          <div class="card mb-4">
+            <div class="card-header">
+              <h3 class="card-title">Trips Completed (Today vs Yesterday)</h3>
+            </div>
+            <div class="card-body">
+              <div id="trips-completed-chart"></div>
+              <p class="mt-3 text-muted small">Sample Data: Today 320 trips | Yesterday 295 trips</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vehicle Utilization -->
+      <div class="row">
+        <div class="col-lg-6 connectedSortable">
+          <div class="card mb-4">
+            <div class="card-header">
+              <h3 class="card-title">Vehicle Utilization Rate</h3>
+            </div>
+            <div class="card-body">
+              <div id="vehicle-utilization-chart"></div>
+              <p class="mt-3 text-muted small">Sample Data: 53% of fleet active today</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div><!-- /.container-fluid -->
   </div>

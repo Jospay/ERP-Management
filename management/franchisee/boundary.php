@@ -13,7 +13,7 @@
     <?php include('../../includes/navbar.php'); ?>
     <!--end::Header-->
     <!--begin::Sidebar-->
-    <?php include('../../includes/sidebarD.php'); ?>
+    <?php include('../../includes/sidebarFr.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
 <main class="app-main" style="background-color: #f0f8ff;">
@@ -22,12 +22,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Violations & Fines</h3>
+          <h3 class="mb-0">Boundary Payments</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Violations & Fines</li>
+            <li class="breadcrumb-item active" aria-current="page">Boundary Payments</li>
           </ol>
         </div>
       </div>
@@ -40,11 +40,56 @@
     <div class="container-fluid">
 
       <div class="row">
-        <!-- Personal Records -->
-        <div class="col-lg-8">
+        <!-- Payment Schedule -->
+        <div class="col-lg-6">
           <div class="card">
-            <div class="card-header bg-danger text-white">
-              <h3 class="card-title"><i class="bi bi-exclamation-octagon me-2"></i> Personal Records</h3>
+            <div class="card-header bg-primary text-white">
+              <h3 class="card-title"><i class="bi bi-calendar-event me-2"></i> Payment Schedule</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  November 1, 2025
+                  <span class="badge bg-success">₱2,000</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  November 2, 2025
+                  <span class="badge bg-warning text-dark">₱1,800 (Pending)</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  November 3, 2025
+                  <span class="badge bg-danger">₱2,200 (Overdue)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pay Boundaries Online -->
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header bg-success text-white">
+              <h3 class="card-title"><i class="bi bi-credit-card me-2"></i> Pay Boundaries Online</h3>
+            </div>
+            <div class="card-body">
+              <p>Select your preferred payment method:</p>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary"><i class="bi bi-phone me-1"></i> GCash</button>
+                <button class="btn btn-info text-white"><i class="bi bi-phone-vibrate me-1"></i> PayMaya</button>
+                <button class="btn btn-secondary"><i class="bi bi-bank me-1"></i> Bank Transfer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <!-- Payment History -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header bg-warning">
+              <h3 class="card-title"><i class="bi bi-receipt me-2"></i> Payment History & Receipts</h3>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -52,51 +97,37 @@
                   <thead class="table-light">
                     <tr>
                       <th>Date</th>
-                      <th>Violation</th>
-                      <th>Fine</th>
+                      <th>Amount</th>
+                      <th>Method</th>
                       <th>Status</th>
+                      <th>Receipt</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>2025-10-15</td>
-                      <td>Speeding</td>
-                      <td><span class="badge bg-danger">₱1,500</span></td>
-                      <td><span class="badge bg-warning text-dark">Unpaid</span></td>
+                      <td>2025-10-28</td>
+                      <td>₱2,000</td>
+                      <td>GCash</td>
+                      <td><span class="badge bg-success">Paid</span></td>
+                      <td><a href="#" class="btn btn-sm btn-primary"><i class="bi bi-download me-1"></i> Download</a></td>
                     </tr>
                     <tr>
-                      <td>2025-09-28</td>
-                      <td>Illegal Parking</td>
-                      <td><span class="badge bg-danger">₱800</span></td>
+                      <td>2025-10-25</td>
+                      <td>₱1,800</td>
+                      <td>Bank Transfer</td>
                       <td><span class="badge bg-success">Paid</span></td>
+                      <td><a href="#" class="btn btn-sm btn-primary"><i class="bi bi-download me-1"></i> Download</a></td>
                     </tr>
                     <tr>
-                      <td>2025-09-10</td>
-                      <td>No Seatbelt</td>
-                      <td><span class="badge bg-danger">₱500</span></td>
+                      <td>2025-10-20</td>
+                      <td>₱2,200</td>
+                      <td>PayMaya</td>
                       <td><span class="badge bg-success">Paid</span></td>
+                      <td><a href="#" class="btn btn-sm btn-primary"><i class="bi bi-download me-1"></i> Download</a></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pay Fines Online -->
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-header bg-warning">
-              <h3 class="card-title"><i class="bi bi-credit-card me-2"></i> Pay Fines Online</h3>
-            </div>
-            <div class="card-body">
-              <p>You have <strong>1 unpaid fine</strong>. Please settle it online to avoid penalties.</p>
-              <a href="#" class="btn btn-danger w-100 mb-2">
-                <i class="bi bi-wallet2 me-1"></i> Pay Now
-              </a>
-              <a href="#" class="btn btn-outline-secondary w-100">
-                <i class="bi bi-clock-history me-1"></i> View Payment History
-              </a>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@
     <?php include('../../includes/navbar.php'); ?>
     <!--end::Header-->
     <!--begin::Sidebar-->
-    <?php include('../../includes/sidebarD.php'); ?>
+    <?php include('../../includes/sidebarFr.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
 <main class="app-main" style="background-color: #f0f8ff;">
@@ -22,12 +22,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Violations & Fines</h3>
+          <h3 class="mb-0">Revenue & Expenses</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Violations & Fines</li>
+            <li class="breadcrumb-item active" aria-current="page">Revenue & Expenses</li>
           </ol>
         </div>
       </div>
@@ -40,41 +40,37 @@
     <div class="container-fluid">
 
       <div class="row">
-        <!-- Personal Records -->
-        <div class="col-lg-8">
+        <!-- Daily Income Reports -->
+        <div class="col-lg-6">
           <div class="card">
-            <div class="card-header bg-danger text-white">
-              <h3 class="card-title"><i class="bi bi-exclamation-octagon me-2"></i> Personal Records</h3>
+            <div class="card-header bg-success text-white">
+              <h3 class="card-title"><i class="bi bi-cash-coin me-2"></i> Daily Income Reports</h3>
             </div>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-bordered table-hover align-middle">
+                <table class="table table-striped table-hover align-middle">
                   <thead class="table-light">
                     <tr>
                       <th>Date</th>
-                      <th>Violation</th>
-                      <th>Fine</th>
-                      <th>Status</th>
+                      <th>Total Trips</th>
+                      <th>Income</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>2025-10-15</td>
-                      <td>Speeding</td>
-                      <td><span class="badge bg-danger">₱1,500</span></td>
-                      <td><span class="badge bg-warning text-dark">Unpaid</span></td>
+                      <td>2025-11-01</td>
+                      <td>320</td>
+                      <td><span class="badge bg-success">₱65,000</span></td>
                     </tr>
                     <tr>
-                      <td>2025-09-28</td>
-                      <td>Illegal Parking</td>
-                      <td><span class="badge bg-danger">₱800</span></td>
-                      <td><span class="badge bg-success">Paid</span></td>
+                      <td>2025-11-02</td>
+                      <td>295</td>
+                      <td><span class="badge bg-success">₱59,000</span></td>
                     </tr>
                     <tr>
-                      <td>2025-09-10</td>
-                      <td>No Seatbelt</td>
-                      <td><span class="badge bg-danger">₱500</span></td>
-                      <td><span class="badge bg-success">Paid</span></td>
+                      <td>2025-11-03</td>
+                      <td>310</td>
+                      <td><span class="badge bg-success">₱62,500</span></td>
                     </tr>
                   </tbody>
                 </table>
@@ -83,20 +79,54 @@
           </div>
         </div>
 
-        <!-- Pay Fines Online -->
-        <div class="col-lg-4">
+        <!-- Input Branch Expenses -->
+        <div class="col-lg-6">
           <div class="card">
-            <div class="card-header bg-warning">
-              <h3 class="card-title"><i class="bi bi-credit-card me-2"></i> Pay Fines Online</h3>
+            <div class="card-header bg-primary text-white">
+              <h3 class="card-title"><i class="bi bi-pencil-square me-2"></i> Input Branch Expenses</h3>
             </div>
             <div class="card-body">
-              <p>You have <strong>1 unpaid fine</strong>. Please settle it online to avoid penalties.</p>
-              <a href="#" class="btn btn-danger w-100 mb-2">
-                <i class="bi bi-wallet2 me-1"></i> Pay Now
-              </a>
-              <a href="#" class="btn btn-outline-secondary w-100">
-                <i class="bi bi-clock-history me-1"></i> View Payment History
-              </a>
+              <form>
+                <div class="mb-3">
+                  <label for="expenseType" class="form-label">Expense Type</label>
+                  <select class="form-select" id="expenseType">
+                    <option value="fuel">Fuel</option>
+                    <option value="repairs">Repairs</option>
+                    <option value="maintenance">Maintenance</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="expenseAmount" class="form-label">Amount</label>
+                  <input type="number" class="form-control" id="expenseAmount" placeholder="e.g. 1500">
+                </div>
+                <div class="mb-3">
+                  <label for="expenseNotes" class="form-label">Notes</label>
+                  <textarea class="form-control" id="expenseNotes" rows="2" placeholder="Optional notes..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-success w-100">
+                  <i class="bi bi-save me-1"></i> Save Expense
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <!-- Download Reports -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header bg-warning">
+              <h3 class="card-title"><i class="bi bi-file-earmark-arrow-down me-2"></i> Download Reports</h3>
+            </div>
+            <div class="card-body text-center">
+              <p>You can download your revenue and expense reports for record-keeping.</p>
+              <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-outline-primary me-2"><i class="bi bi-filetype-csv me-1"></i> Download CSV</button>
+                <button class="btn btn-outline-danger"><i class="bi bi-file-earmark-pdf me-1"></i> Download PDF</button>
+              </div>
             </div>
           </div>
         </div>
@@ -107,6 +137,7 @@
   </div>
   <!--end::App Content-->
 </main>
+
 
     <!--end::App Main-->
     <!--begin::Footer-->
