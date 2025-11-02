@@ -55,26 +55,32 @@
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="card">
-              <div class="card-header bg-success text-white">
-                <h3 class="card-title mb-0">Inventory Summary</h3>
-              </div>
-              <div class="card-body">
-                <ul class="list-group">
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Compressors <span class="badge bg-primary">12 pcs</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Filters <span class="badge bg-warning">8 pcs</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Belts <span class="badge bg-danger">Low Stock</span>
-                  </li>
-                </ul>
-              </div>
+         <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header bg-success text-white">
+              <h3 class="card-title mb-0">EV Inventory Summary</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Battery Modules <span class="badge bg-primary">24 units</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Charging Cables <span class="badge bg-warning">15 pcs</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Power Inverters <span class="badge bg-info">10 units</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Electric Motors <span class="badge bg-danger">Low Stock</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Control Units <span class="badge bg-success">18 pcs</span>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>

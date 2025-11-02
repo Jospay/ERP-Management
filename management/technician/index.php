@@ -12,7 +12,7 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-6">
-              <h3 class="mb-0">Welcome back, Technician John!</h3>
+              <h3 class="mb-0">Welcome back!</h3>
               <p class="text-muted">Here are your current EV taxi service assignments.</p>
             </div>
             <div class="col-sm-6">
