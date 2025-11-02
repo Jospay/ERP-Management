@@ -16,139 +16,70 @@
     <?php include('../../includes/sidebarD.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
-    <main class="app-main">
-      <!--begin::App Content Header-->
-      <div class="app-content-header">
-        <!--begin::Container-->
-        <div class="container-fluid">
-          <!--begin::Row-->
-          <div class="row">
-            <div class="col-sm-6">
-            <h3 class="mb-0">Dashboard</h3>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-end">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-            </ol>
-          </div>
-          </div>
-          <!--end::Row-->
-          </div>
-          <!--end::Container-->
-          </div>
-          <!--end::App Content Header-->
-
-          <!--begin::App Content-->
-          <div class="app-content">
-            <!--begin::Container-->
-            <div class="container-fluid">
-              <!--begin::Row-->
-              <div class="row">
-                <!--begin::Col-->
-                <div class="row">
-
-                  <!-- Trips -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-primary">
-                      <div class="inner">
-                        <h3>320</h3>
-                        <p>Total Trips Today</p>
-                      </div>
-                      <i class="bi bi-geo-alt small-box-icon"></i>
-                      <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <!-- Income -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-success">
-                      <div class="inner">
-                        <h3>₱120k</h3>
-                        <p>Total Income Today</p>
-                      </div>
-                      <i class="bi bi-cash-coin small-box-icon"></i>
-                      <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <!-- Battery Status -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-warning">
-                      <div class="inner">
-                        <h3>85<sup class="fs-5">%</sup></h3>
-                        <p>Average Battery Status</p>
-                      </div>
-                      <i class="bi bi-battery-charging small-box-icon text-dark fs-1"></i>
-                      <a href="#" class="small-box-footer link-dark link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <!-- Pending Payments (optional to keep) -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-danger">
-                      <div class="inner">
-                        <h3>12</h3>
-                        <p>Pending Payments</p>
-                      </div>
-                      <i class="bi bi-clock-history small-box-icon"></i>
-                      <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                </div>
-                <!--end::Col-->
-              </div>
-              <!--end::Row-->
-
-              <!--begin::Row-->
-              <div class="row">
-                <!-- Sales Chart -->
-                <div class="col-lg-6 connectedSortable">
-                  <div class="card mb-4">
-                    <div class="card-header">
-                      <h3 class="card-title">Sales Value</h3>
-                    </div>
-                    <div class="card-body">
-                      <div id="revenue-chart"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- World Map -->
-                <div class="col-lg-6 connectedSortable">
-                  <div class="card mb-4">
-                    <div class="card-header">
-                      <h3 class="card-title">World Map</h3>
-                    </div>
-                    <div class="card-body">
-                      <div id="world-map" style="height: 300px; border-radius: 8px;"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end::Row-->
-            </div>
-            <!--end::Container-->
-          </div>
-          <!--end::App Content-->
-
-            <!-- /.Start col -->
-          </div>
-          <!-- /.row (main row) -->
+<main class="app-main">
+  <!--begin::App Content Header-->
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3 class="mb-0">My Vehicle</h3>
         </div>
-        <!--end::Container-->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-end">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">My Vehicle</li>
+          </ol>
+        </div>
       </div>
-      <!--end::App Content-->
-    </main>
+    </div>
+  </div>
+  <!--end::App Content Header-->
+
+  <!--begin::App Content-->
+  <div class="app-content">
+    <div class="container-fluid">
+
+      <!-- Vehicle Details Card -->
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <h3 class="card-title"><i class="bi bi-car-front me-2"></i> Assigned Vehicle</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Model
+                  <span class="fw-bold">Toyota Vios 2022</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Plate Number
+                  <span class="fw-bold">ABC-1234</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Battery Status
+                  <span class="badge bg-success">85%</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Maintenance Status
+                  <span class="badge bg-warning text-dark">Due Soon</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer text-end">
+              <button class="btn btn-danger">
+                <i class="bi bi-exclamation-triangle me-1"></i> Report Issue
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.container-fluid -->
+  </div>
+  <!--end::App Content-->
+</main>
+
     <!--end::App Main-->
     <!--begin::Footer-->
 

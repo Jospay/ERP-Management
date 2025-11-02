@@ -16,139 +16,193 @@
     <?php include('../../includes/sidebarD.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
-    <main class="app-main">
-      <!--begin::App Content Header-->
-      <div class="app-content-header">
-        <!--begin::Container-->
-        <div class="container-fluid">
-          <!--begin::Row-->
-          <div class="row">
-            <div class="col-sm-6">
-            <h3 class="mb-0">Dashboard</h3>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-end">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-            </ol>
-          </div>
-          </div>
-          <!--end::Row-->
-          </div>
-          <!--end::Container-->
-          </div>
-          <!--end::App Content Header-->
-
-          <!--begin::App Content-->
-          <div class="app-content">
-            <!--begin::Container-->
-            <div class="container-fluid">
-              <!--begin::Row-->
-              <div class="row">
-                <!--begin::Col-->
-                <div class="row">
-
-                  <!-- Trips -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-primary">
-                      <div class="inner">
-                        <h3>320</h3>
-                        <p>Total Trips Today</p>
-                      </div>
-                      <i class="bi bi-geo-alt small-box-icon"></i>
-                      <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <!-- Income -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-success">
-                      <div class="inner">
-                        <h3>₱120k</h3>
-                        <p>Total Income Today</p>
-                      </div>
-                      <i class="bi bi-cash-coin small-box-icon"></i>
-                      <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <!-- Battery Status -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-warning">
-                      <div class="inner">
-                        <h3>85<sup class="fs-5">%</sup></h3>
-                        <p>Average Battery Status</p>
-                      </div>
-                      <i class="bi bi-battery-charging small-box-icon text-dark fs-1"></i>
-                      <a href="#" class="small-box-footer link-dark link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <!-- Pending Payments (optional to keep) -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-danger">
-                      <div class="inner">
-                        <h3>12</h3>
-                        <p>Pending Payments</p>
-                      </div>
-                      <i class="bi bi-clock-history small-box-icon"></i>
-                      <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                </div>
-                <!--end::Col-->
-              </div>
-              <!--end::Row-->
-
-              <!--begin::Row-->
-              <div class="row">
-                <!-- Sales Chart -->
-                <div class="col-lg-6 connectedSortable">
-                  <div class="card mb-4">
-                    <div class="card-header">
-                      <h3 class="card-title">Sales Value</h3>
-                    </div>
-                    <div class="card-body">
-                      <div id="revenue-chart"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- World Map -->
-                <div class="col-lg-6 connectedSortable">
-                  <div class="card mb-4">
-                    <div class="card-header">
-                      <h3 class="card-title">World Map</h3>
-                    </div>
-                    <div class="card-body">
-                      <div id="world-map" style="height: 300px; border-radius: 8px;"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end::Row-->
-            </div>
-            <!--end::Container-->
-          </div>
-          <!--end::App Content-->
-
-            <!-- /.Start col -->
-          </div>
-          <!-- /.row (main row) -->
+<main class="app-main">
+  <!--begin::App Content Header-->
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3 class="mb-0">My Trips</h3>
         </div>
-        <!--end::Container-->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-end">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">My Trips</li>
+          </ol>
+        </div>
       </div>
-      <!--end::App Content-->
-    </main>
+    </div>
+  </div>
+  <!--end::App Content Header-->
+
+  <!--begin::App Content-->
+  <div class="app-content">
+    <div class="container-fluid">
+
+      <!-- Summary Small Boxes -->
+      <div class="row">
+        <div class="col-lg-3 col-6">
+          <div class="small-box text-bg-primary">
+            <div class="inner">
+              <h3>320</h3>
+              <p>Total Trips Today</p>
+            </div>
+            <i class="bi bi-geo-alt small-box-icon"></i>
+            <a href="#" class="small-box-footer">More info <i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-6">
+          <div class="small-box text-bg-success">
+            <div class="inner">
+              <h3>₱120k</h3>
+              <p>Total Income Today</p>
+            </div>
+            <i class="bi bi-cash-coin small-box-icon"></i>
+            <a href="#" class="small-box-footer">More info <i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-6">
+          <div class="small-box text-bg-warning">
+            <div class="inner">
+              <h3>85<sup class="fs-5">%</sup></h3>
+              <p>Average Battery Status</p>
+            </div>
+            <i class="bi bi-battery-charging small-box-icon text-dark fs-1"></i>
+            <a href="#" class="small-box-footer">More info <i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-6">
+          <div class="small-box text-bg-danger">
+            <div class="inner">
+              <h3>12</h3>
+              <p>Pending Payments</p>
+            </div>
+            <i class="bi bi-clock-history small-box-icon"></i>
+            <a href="#" class="small-box-footer">More info <i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <!-- Trip History -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <h3 class="card-title"><i class="bi bi-clock-history me-2"></i> Trip History</h3>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Date</th>
+                      <th>Passenger</th>
+                      <th>Fare</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2025-11-01</td>
+                      <td>Juan Dela Cruz</td>
+                      <td><span class="badge bg-success">₱250</span></td>
+                    </tr>
+                    <tr>
+                      <td>2025-11-02</td>
+                      <td>Maria Santos</td>
+                      <td><span class="badge bg-success">₱180</span></td>
+                    </tr>
+                    <tr>
+                      <td>2025-11-03</td>
+                      <td>Carlos Reyes</td>
+                      <td><span class="badge bg-success">₱300</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Earnings Breakdown -->
+      <div class="row mt-4">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header bg-success text-white">
+              <h3 class="card-title"><i class="bi bi-cash-coin me-2"></i> Earnings Breakdown</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Total Earnings This Week
+                  <span class="badge bg-success rounded-pill">₱5,200</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Average Fare
+                  <span class="badge bg-primary rounded-pill">₱220</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Number of Trips
+                  <span class="badge bg-info rounded-pill">24</span>
+                </li>
+              </ul>
+              <!-- Chart Placeholder -->
+              <div id="earnings-breakdown-chart" style="height:250px;" class="mt-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Passenger Ratings -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header bg-warning">
+              <h3 class="card-title"><i class="bi bi-star me-2"></i> Passenger Ratings</h3>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Passenger</th>
+                      <th>Rating</th>
+                      <th>Feedback</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Juan Dela Cruz</td>
+                      <td><span class="text-warning">★ ★ ★ ★ ☆</span></td>
+                      <td>Safe and smooth ride</td>
+                    </tr>
+                    <tr>
+                      <td>Maria Santos</td>
+                      <td><span class="text-warning">★ ★ ★ ★ ★</span></td>
+                      <td>Very friendly driver</td>
+                    </tr>
+                    <tr>
+                      <td>Carlos Reyes</td>
+                      <td><span class="text-warning">★ ★ ★ ☆ ☆</span></td>
+                      <td>Good but arrived late</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.container-fluid -->
+  </div>
+  <!--end::App Content-->
+</main>
+
     <!--end::App Main-->
     <!--begin::Footer-->
 

@@ -16,139 +16,115 @@
     <?php include('../../includes/sidebarD.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
-    <main class="app-main">
-      <!--begin::App Content Header-->
-      <div class="app-content-header">
-        <!--begin::Container-->
-        <div class="container-fluid">
-          <!--begin::Row-->
-          <div class="row">
-            <div class="col-sm-6">
-            <h3 class="mb-0">Dashboard</h3>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-end">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-            </ol>
-          </div>
-          </div>
-          <!--end::Row-->
-          </div>
-          <!--end::Container-->
-          </div>
-          <!--end::App Content Header-->
-
-          <!--begin::App Content-->
-          <div class="app-content">
-            <!--begin::Container-->
-            <div class="container-fluid">
-              <!--begin::Row-->
-              <div class="row">
-                <!--begin::Col-->
-                <div class="row">
-
-                  <!-- Trips -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-primary">
-                      <div class="inner">
-                        <h3>320</h3>
-                        <p>Total Trips Today</p>
-                      </div>
-                      <i class="bi bi-geo-alt small-box-icon"></i>
-                      <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <!-- Income -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-success">
-                      <div class="inner">
-                        <h3>₱120k</h3>
-                        <p>Total Income Today</p>
-                      </div>
-                      <i class="bi bi-cash-coin small-box-icon"></i>
-                      <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <!-- Battery Status -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-warning">
-                      <div class="inner">
-                        <h3>85<sup class="fs-5">%</sup></h3>
-                        <p>Average Battery Status</p>
-                      </div>
-                      <i class="bi bi-battery-charging small-box-icon text-dark fs-1"></i>
-                      <a href="#" class="small-box-footer link-dark link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <!-- Pending Payments (optional to keep) -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-danger">
-                      <div class="inner">
-                        <h3>12</h3>
-                        <p>Pending Payments</p>
-                      </div>
-                      <i class="bi bi-clock-history small-box-icon"></i>
-                      <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                </div>
-                <!--end::Col-->
-              </div>
-              <!--end::Row-->
-
-              <!--begin::Row-->
-              <div class="row">
-                <!-- Sales Chart -->
-                <div class="col-lg-6 connectedSortable">
-                  <div class="card mb-4">
-                    <div class="card-header">
-                      <h3 class="card-title">Sales Value</h3>
-                    </div>
-                    <div class="card-body">
-                      <div id="revenue-chart"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- World Map -->
-                <div class="col-lg-6 connectedSortable">
-                  <div class="card mb-4">
-                    <div class="card-header">
-                      <h3 class="card-title">World Map</h3>
-                    </div>
-                    <div class="card-body">
-                      <div id="world-map" style="height: 300px; border-radius: 8px;"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end::Row-->
-            </div>
-            <!--end::Container-->
-          </div>
-          <!--end::App Content-->
-
-            <!-- /.Start col -->
-          </div>
-          <!-- /.row (main row) -->
+<main class="app-main">
+  <!--begin::App Content Header-->
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3 class="mb-0">Earnings</h3>
         </div>
-        <!--end::Container-->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-end">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Earnings</li>
+          </ol>
+        </div>
       </div>
-      <!--end::App Content-->
-    </main>
+    </div>
+  </div>
+  <!--end::App Content Header-->
+
+  <!--begin::App Content-->
+  <div class="app-content">
+    <div class="container-fluid">
+
+      <!-- Summary Small Boxes -->
+      <div class="row">
+        <!-- Daily Income -->
+        <div class="col-lg-4 col-6">
+          <div class="small-box text-bg-primary">
+            <div class="inner">
+              <h3>₱15,000</h3>
+              <p>Daily Income</p>
+            </div>
+            <i class="bi bi-calendar-day small-box-icon"></i>
+            <a href="#" class="small-box-footer">View details <i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <!-- Weekly Income -->
+        <div class="col-lg-4 col-6">
+          <div class="small-box text-bg-success">
+            <div class="inner">
+              <h3>₱95,000</h3>
+              <p>Weekly Income</p>
+            </div>
+            <i class="bi bi-calendar-week small-box-icon"></i>
+            <a href="#" class="small-box-footer">View details <i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <!-- Monthly Income -->
+        <div class="col-lg-4 col-6">
+          <div class="small-box text-bg-info">
+            <div class="inner">
+              <h3>₱380,000</h3>
+              <p>Monthly Income</p>
+            </div>
+            <i class="bi bi-calendar-month small-box-icon"></i>
+            <a href="#" class="small-box-footer">View details <i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <!-- Pending Boundary Dues -->
+      <div class="row mt-4">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header bg-danger text-white">
+              <h3 class="card-title"><i class="bi bi-exclamation-octagon me-2"></i> Pending Boundary Dues</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  November 1, 2025
+                  <span class="badge bg-danger rounded-pill">₱2,000</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  November 2, 2025
+                  <span class="badge bg-danger rounded-pill">₱1,800</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  November 3, 2025
+                  <span class="badge bg-danger rounded-pill">₱2,200</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pay Boundary Online -->
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header bg-warning">
+              <h3 class="card-title"><i class="bi bi-credit-card me-2"></i> Pay Boundary Online</h3>
+            </div>
+            <div class="card-body">
+              <p>You can settle your pending boundary dues securely online.</p>
+              <a href="#" class="btn btn-success"><i class="bi bi-wallet2 me-1"></i> Pay Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div><!-- /.container-fluid -->
+  </div>
+  <!--end::App Content-->
+</main>
+
     <!--end::App Main-->
     <!--begin::Footer-->
 
