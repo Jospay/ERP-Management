@@ -681,7 +681,7 @@
                 </div>
                 <transition name="slide-fade">
                     <p v-if="open[2]" class="ps-10 mt-2 text-gray-800">
-                        Our system is optimized for e-vehicles, but traditional vehicles can also be registered while transitioning to green fleets.
+                        Our system is optimized for e-vehicles only.
                     </p>
                 </transition>
                 <p class="block md:hidden mt-2 text-gray-800">
