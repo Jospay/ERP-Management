@@ -22,12 +22,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Support</h3>
+          <h3 class="mb-0">E‑Car Support</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Support</li>
+            <li class="breadcrumb-item active" aria-current="page">E‑Car Support</li>
           </ol>
         </div>
       </div>
@@ -40,25 +40,28 @@
     <div class="container-fluid">
 
       <div class="row">
-        <!-- File Issue -->
+        <!-- File E‑Car Issue -->
         <div class="col-lg-6">
           <div class="card">
             <div class="card-header bg-primary text-white">
-              <h3 class="card-title"><i class="bi bi-exclamation-triangle me-2"></i> File an Issue</h3>
+              <h3 class="card-title"><i class="bi bi-ev-front me-2"></i> File an E‑Car Issue</h3>
             </div>
             <div class="card-body">
               <form>
                 <div class="mb-3">
                   <label for="issueType" class="form-label">Issue Type</label>
                   <select class="form-select" id="issueType">
-                    <option value="vehicle">Vehicle</option>
+                    <option value="battery">Battery / Charging</option>
+                    <option value="software">Software / Dashboard</option>
+                    <option value="motor">Electric Motor</option>
                     <option value="passenger">Passenger</option>
                     <option value="payment">Payment</option>
+                    <option value="other">Other</option>
                   </select>
                 </div>
                 <div class="mb-3">
                   <label for="issueDetails" class="form-label">Details</label>
-                  <textarea class="form-control" id="issueDetails" rows="4" placeholder="Describe the issue..."></textarea>
+                  <textarea class="form-control" id="issueDetails" rows="4" placeholder="Describe the E‑Car issue..."></textarea>
                 </div>
                 <button type="submit" class="btn btn-danger">
                   <i class="bi bi-send me-1"></i> Submit Issue
@@ -68,11 +71,11 @@
           </div>
         </div>
 
-        <!-- Chat with Manager -->
+        <!-- Chat with Fleet Manager -->
         <div class="col-lg-6">
           <div class="card">
             <div class="card-header bg-success text-white">
-              <h3 class="card-title"><i class="bi bi-chat-dots me-2"></i> Chat with Manager</h3>
+              <h3 class="card-title"><i class="bi bi-chat-dots me-2"></i> Chat with Fleet Manager</h3>
             </div>
             <div class="card-body" style="height: 300px; overflow-y: auto;">
               <!-- Example chat messages -->
@@ -81,12 +84,12 @@
                   <span class="badge bg-secondary">Manager</span>
                 </div>
                 <div class="flex-grow-1 ms-2">
-                  <div class="p-2 bg-light rounded">Hello, how can I assist you today?</div>
+                  <div class="p-2 bg-light rounded">Hello, how can I assist you with your E‑Car today?</div>
                 </div>
               </div>
               <div class="d-flex mb-3 justify-content-end">
                 <div class="flex-grow-1 me-2 text-end">
-                  <div class="p-2 bg-primary text-white rounded">I need help with a payment issue.</div>
+                  <div class="p-2 bg-primary text-white rounded">I need help with a charging issue.</div>
                 </div>
                 <div class="flex-shrink-0">
                   <span class="badge bg-info">You</span>

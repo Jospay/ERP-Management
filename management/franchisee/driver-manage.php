@@ -27,7 +27,7 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Driver Management</li>
+            <li class="breadcrumb-item active" aria-current="page">E‑Car Driver Management</li>
           </ol>
         </div>
       </div>
@@ -40,11 +40,11 @@
     <div class="container-fluid">
 
       <div class="row">
-        <!-- Add / Suspend Driver -->
+        <!-- Add / Suspend E‑Car Driver -->
         <div class="col-lg-4">
           <div class="card">
             <div class="card-header bg-primary text-white">
-              <h3 class="card-title"><i class="bi bi-person-plus me-2"></i> Add / Suspend Driver</h3>
+              <h3 class="card-title"><i class="bi bi-person-plus me-2"></i> Add / Suspend E‑Car Driver</h3>
             </div>
             <div class="card-body">
               <form>
@@ -64,21 +64,21 @@
                   </select>
                 </div>
                 <button type="submit" class="btn btn-success w-100 mb-2">
-                  <i class="bi bi-check-circle me-1"></i> Save Driver
+                  <i class="bi bi-check-circle me-1"></i> Save E‑Car Driver
                 </button>
                 <button type="button" class="btn btn-danger w-100">
-                  <i class="bi bi-slash-circle me-1"></i> Suspend Driver
+                  <i class="bi bi-slash-circle me-1"></i> Suspend E‑Car Driver
                 </button>
               </form>
             </div>
           </div>
         </div>
 
-        <!-- Driver Attendance & Performance -->
+        <!-- E‑Car Driver Attendance & Performance -->
         <div class="col-lg-8">
           <div class="card">
             <div class="card-header bg-warning">
-              <h3 class="card-title"><i class="bi bi-clipboard-check me-2"></i> Attendance & Performance</h3>
+              <h3 class="card-title"><i class="bi bi-clipboard-check me-2"></i> E‑Car Driver Attendance & Performance</h3>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -88,7 +88,7 @@
                       <th>Driver</th>
                       <th>Branch</th>
                       <th>Attendance</th>
-                      <th>Trips Completed</th>
+                      <th>E‑Car Trips Completed</th>
                       <th>Performance</th>
                       <th>Rating</th>
                     </tr>

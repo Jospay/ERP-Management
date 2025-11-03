@@ -27,7 +27,7 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Fleet Management</li>
+            <li class="breadcrumb-item active" aria-current="page">E‑Car Fleet Management</li>
           </ol>
         </div>
       </div>
@@ -40,21 +40,21 @@
     <div class="container-fluid">
 
       <div class="row">
-        <!-- Add New Vehicle Request -->
+        <!-- Add New E‑Car Request -->
         <div class="col-lg-4">
           <div class="card">
             <div class="card-header bg-primary text-white">
-              <h3 class="card-title"><i class="bi bi-plus-circle me-2"></i> Add New Vehicle</h3>
+              <h3 class="card-title"><i class="bi bi-plus-circle me-2"></i> Add New E‑Car</h3>
             </div>
             <div class="card-body">
               <form>
                 <div class="mb-3">
-                  <label for="vehicleModel" class="form-label">Vehicle Model</label>
-                  <input type="text" class="form-control" id="vehicleModel" placeholder="e.g. Toyota Vios 2022">
+                  <label for="vehicleModel" class="form-label">E‑Car Model</label>
+                  <input type="text" class="form-control" id="vehicleModel" placeholder="e.g. Nissan Leaf 2023">
                 </div>
                 <div class="mb-3">
                   <label for="plateNumber" class="form-label">Plate Number</label>
-                  <input type="text" class="form-control" id="plateNumber" placeholder="e.g. ABC-1234">
+                  <input type="text" class="form-control" id="plateNumber" placeholder="e.g. EV-1234">
                 </div>
                 <button type="submit" class="btn btn-success w-100">
                   <i class="bi bi-check-circle me-1"></i> Submit Request
@@ -64,21 +64,22 @@
           </div>
         </div>
 
-        <!-- Vehicle Status Management -->
+        <!-- E‑Car Status Management -->
         <div class="col-lg-8">
           <div class="card">
             <div class="card-header bg-warning">
-              <h3 class="card-title"><i class="bi bi-gear me-2"></i> Vehicle Status</h3>
+              <h3 class="card-title"><i class="bi bi-gear me-2"></i> E‑Car Status</h3>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered table-hover align-middle">
                   <thead class="table-light">
                     <tr>
-                      <th>Vehicle</th>
+                      <th>E‑Car</th>
                       <th>Plate</th>
                       <th>Status</th>
                       <th>Battery</th>
+                      <th>Charging</th>
                       <th>GPS</th>
                       <th>Driver</th>
                       <th>Action</th>
@@ -86,10 +87,11 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Toyota Vios</td>
-                      <td>ABC-1234</td>
+                      <td>Nissan Leaf</td>
+                      <td>EV-1234</td>
                       <td><span class="badge bg-success">Active</span></td>
                       <td><span class="badge bg-info">85%</span></td>
+                      <td><span class="badge bg-primary">Charging</span></td>
                       <td><span class="badge bg-success">Online</span></td>
                       <td>Juan Dela Cruz</td>
                       <td>
@@ -97,10 +99,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Mitsubishi L300</td>
-                      <td>XYZ-5678</td>
+                      <td>BYD Dolphin</td>
+                      <td>EV-5678</td>
                       <td><span class="badge bg-warning text-dark">In Maintenance</span></td>
                       <td><span class="badge bg-danger">40%</span></td>
+                      <td><span class="badge bg-secondary">Idle</span></td>
                       <td><span class="badge bg-secondary">Offline</span></td>
                       <td>Maria Santos</td>
                       <td>
@@ -108,10 +111,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Nissan NV350</td>
-                      <td>LMN-9012</td>
+                      <td>Hyundai Ioniq 5</td>
+                      <td>EV-9012</td>
                       <td><span class="badge bg-success">Active</span></td>
                       <td><span class="badge bg-info">92%</span></td>
+                      <td><span class="badge bg-success">Ready</span></td>
                       <td><span class="badge bg-success">Online</span></td>
                       <td>Carlos Reyes</td>
                       <td>
@@ -131,6 +135,7 @@
   </div>
   <!--end::App Content-->
 </main>
+
 
     <!--end::App Main-->
     <!--begin::Footer-->

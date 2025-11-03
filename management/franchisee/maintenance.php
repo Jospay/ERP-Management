@@ -27,7 +27,7 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Maintenance Tracker</li>
+            <li class="breadcrumb-item active" aria-current="page">E‑Car Maintenance Tracker</li>
           </ol>
         </div>
       </div>
@@ -44,21 +44,23 @@
         <div class="col-lg-4">
           <div class="card">
             <div class="card-header bg-primary text-white">
-              <h3 class="card-title"><i class="bi bi-wrench-adjustable-circle me-2"></i> Create Service Request</h3>
+              <h3 class="card-title"><i class="bi bi-ev-front me-2"></i> Create E‑Car Service Request</h3>
             </div>
             <div class="card-body">
               <form>
                 <div class="mb-3">
-                  <label for="vehiclePlate" class="form-label">Vehicle Plate</label>
-                  <input type="text" class="form-control" id="vehiclePlate" placeholder="e.g. ABC-1234">
+                  <label for="vehiclePlate" class="form-label">E‑Car Plate</label>
+                  <input type="text" class="form-control" id="vehiclePlate" placeholder="e.g. EV-1234">
                 </div>
                 <div class="mb-3">
                   <label for="issueType" class="form-label">Issue Type</label>
                   <select class="form-select" id="issueType">
-                    <option value="engine">Engine</option>
-                    <option value="battery">Battery</option>
-                    <option value="tires">Tires</option>
+                    <option value="battery">Battery Health</option>
+                    <option value="charging">Charging Port</option>
+                    <option value="software">Software Update</option>
+                    <option value="motor">Electric Motor</option>
                     <option value="brakes">Brakes</option>
+                    <option value="tires">Tires</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
@@ -86,7 +88,7 @@
                   <thead class="table-light">
                     <tr>
                       <th>Request ID</th>
-                      <th>Vehicle</th>
+                      <th>E‑Car Plate</th>
                       <th>Issue</th>
                       <th>Technician</th>
                       <th>Status</th>
@@ -95,25 +97,25 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>#MT-001</td>
-                      <td>ABC-1234</td>
-                      <td>Engine Overheating</td>
+                      <td>#EV-001</td>
+                      <td>EV-1234</td>
+                      <td>Battery Health Check</td>
                       <td>Mark Villanueva</td>
                       <td><span class="badge bg-warning text-dark">In Progress</span></td>
                       <td>2025-11-03 10:15 AM</td>
                     </tr>
                     <tr>
-                      <td>#MT-002</td>
-                      <td>XYZ-5678</td>
-                      <td>Battery Replacement</td>
+                      <td>#EV-002</td>
+                      <td>EV-5678</td>
+                      <td>Charging Port Malfunction</td>
                       <td>Anna Cruz</td>
                       <td><span class="badge bg-success">Completed</span></td>
                       <td>2025-11-02 04:30 PM</td>
                     </tr>
                     <tr>
-                      <td>#MT-003</td>
-                      <td>LMN-9012</td>
-                      <td>Brake Inspection</td>
+                      <td>#EV-003</td>
+                      <td>EV-9012</td>
+                      <td>Software Update Required</td>
                       <td>Jose Ramirez</td>
                       <td><span class="badge bg-danger">Pending</span></td>
                       <td>2025-11-01 02:00 PM</td>
@@ -131,6 +133,7 @@
   </div>
   <!--end::App Content-->
 </main>
+
 
     <!--end::App Main-->
     <!--begin::Footer-->

@@ -22,12 +22,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Violations & Fines</h3>
+          <h3 class="mb-0">E‑Car Violations & Fines</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Violations & Fines</li>
+            <li class="breadcrumb-item active" aria-current="page">E‑Car Violations & Fines</li>
           </ol>
         </div>
       </div>
@@ -44,7 +44,7 @@
         <div class="col-lg-8">
           <div class="card">
             <div class="card-header bg-danger text-white">
-              <h3 class="card-title"><i class="bi bi-exclamation-octagon me-2"></i> Personal Records</h3>
+              <h3 class="card-title"><i class="bi bi-exclamation-octagon me-2"></i> E‑Car Driver Records</h3>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -52,6 +52,7 @@
                   <thead class="table-light">
                     <tr>
                       <th>Date</th>
+                      <th>Plate</th>
                       <th>Violation</th>
                       <th>Fine</th>
                       <th>Status</th>
@@ -60,20 +61,30 @@
                   <tbody>
                     <tr>
                       <td>2025-10-15</td>
-                      <td>Speeding</td>
+                      <td>EV-1234</td>
+                      <td><i class="bi bi-speedometer2 text-danger me-1"></i> Overspeeding</td>
                       <td><span class="badge bg-danger">₱1,500</span></td>
                       <td><span class="badge bg-warning text-dark">Unpaid</span></td>
                     </tr>
                     <tr>
                       <td>2025-09-28</td>
-                      <td>Illegal Parking</td>
-                      <td><span class="badge bg-danger">₱800</span></td>
+                      <td>EV-5678</td>
+                      <td><i class="bi bi-ev-front text-primary me-1"></i> Blocking Charging Station</td>
+                      <td><span class="badge bg-danger">₱1,000</span></td>
                       <td><span class="badge bg-success">Paid</span></td>
                     </tr>
                     <tr>
                       <td>2025-09-10</td>
-                      <td>No Seatbelt</td>
-                      <td><span class="badge bg-danger">₱500</span></td>
+                      <td>EV-9012</td>
+                      <td><i class="bi bi-parking text-info me-1"></i> Illegal Parking</td>
+                      <td><span class="badge bg-danger">₱800</span></td>
+                      <td><span class="badge bg-success">Paid</span></td>
+                    </tr>
+                    <tr>
+                      <td>2025-08-22</td>
+                      <td>EV-3456</td>
+                      <td><i class="bi bi-battery-charging text-warning me-1"></i> Overstaying at Charger</td>
+                      <td><span class="badge bg-danger">₱600</span></td>
                       <td><span class="badge bg-success">Paid</span></td>
                     </tr>
                   </tbody>
@@ -87,7 +98,7 @@
         <div class="col-lg-4">
           <div class="card">
             <div class="card-header bg-warning">
-              <h3 class="card-title"><i class="bi bi-credit-card me-2"></i> Pay Fines Online</h3>
+              <h3 class="card-title"><i class="bi bi-credit-card me-2"></i> Pay E‑Car Fines Online</h3>
             </div>
             <div class="card-body">
               <p>You have <strong>1 unpaid fine</strong>. Please settle it online to avoid penalties.</p>
@@ -107,6 +118,7 @@
   </div>
   <!--end::App Content-->
 </main>
+
 
     <!--end::App Main-->
     <!--begin::Footer-->

@@ -16,69 +16,45 @@
     <?php include('../../includes/sidebarD.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
-<main class="app-main" style="background-color: #f0f8ff;">
-  <!--begin::App Content Header-->
-  <div class="app-content-header">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6">
-          <h3 class="mb-0">My Vehicle</h3>
-        </div>
-        <div class="col-sm-6">
-          <ol class="breadcrumb float-sm-end">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">My Vehicle</li>
-          </ol>
-        </div>
-      </div>
-    </div>
+<div class="card">
+  <div class="card-header bg-primary text-white">
+    <h3 class="card-title"><i class="bi bi-ev-front me-2"></i> Assigned E‑Car</h3>
   </div>
-  <!--end::App Content Header-->
-
-  <!--begin::App Content-->
-  <div class="app-content">
-    <div class="container-fluid">
-
-      <!-- Vehicle Details Card -->
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="card">
-            <div class="card-header bg-primary text-white">
-              <h3 class="card-title"><i class="bi bi-car-front me-2"></i> Assigned Vehicle</h3>
-            </div>
-            <div class="card-body">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Model
-                  <span class="fw-bold">Toyota Vios 2022</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Plate Number
-                  <span class="fw-bold">ABC-1234</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Battery Status
-                  <span class="badge bg-success">85%</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Maintenance Status
-                  <span class="badge bg-warning text-dark">Due Soon</span>
-                </li>
-              </ul>
-            </div>
-            <div class="card-footer text-end">
-              <button class="btn btn-danger">
-                <i class="bi bi-exclamation-triangle me-1"></i> Report Issue
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /.container-fluid -->
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Model
+        <span class="fw-bold">Nissan Leaf 2023</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Plate Number
+        <span class="fw-bold">EV-5678</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Battery Status
+        <span class="badge bg-success">85% (220 km range)</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Charging Status
+        <span class="badge bg-primary">Charging at Station A</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Maintenance Status
+        <span class="badge bg-warning text-dark">Due Soon</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Assigned Driver
+        <span class="fw-bold">Juan Dela Cruz</span>
+      </li>
+    </ul>
   </div>
-  <!--end::App Content-->
-</main>
+  <div class="card-footer text-end">
+    <button class="btn btn-danger">
+      <i class="bi bi-exclamation-triangle me-1"></i> Report Issue
+    </button>
+  </div>
+</div>
+
 
     <!--end::App Main-->
     <!--begin::Footer-->

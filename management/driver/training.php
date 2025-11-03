@@ -22,12 +22,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Training</h3>
+          <h3 class="mb-0">E‑Car Training</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Training</li>
+            <li class="breadcrumb-item active" aria-current="page">E‑Car Training</li>
           </ol>
         </div>
       </div>
@@ -44,20 +44,24 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-header bg-primary text-white">
-              <h3 class="card-title"><i class="bi bi-journal-text me-2"></i> Online Driver Courses</h3>
+              <h3 class="card-title"><i class="bi bi-journal-text me-2"></i> Online E‑Car Driver Courses</h3>
             </div>
             <div class="card-body">
               <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Vehicle Operation
+                  E‑Car Operation & Controls
                   <button class="btn btn-sm btn-success">Start Course</button>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Customer Service
+                  Battery Management & Charging
                   <button class="btn btn-sm btn-success">Start Course</button>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Safety & Compliance
+                  Safety & Compliance (EV Standards)
+                  <button class="btn btn-sm btn-success">Start Course</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Eco‑Driving & Energy Efficiency
                   <button class="btn btn-sm btn-success">Start Course</button>
                 </li>
               </ul>
@@ -83,17 +87,22 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Vehicle Operation</td>
+                      <td>E‑Car Operation & Controls</td>
                       <td><span class="badge bg-success">Completed</span></td>
                       <td><a href="#" class="btn btn-sm btn-primary"><i class="bi bi-download me-1"></i> Download</a></td>
                     </tr>
                     <tr>
-                      <td>Customer Service</td>
+                      <td>Battery Management & Charging</td>
                       <td><span class="badge bg-warning text-dark">In Progress</span></td>
                       <td><span class="text-muted">Not Available</span></td>
                     </tr>
                     <tr>
-                      <td>Safety & Compliance</td>
+                      <td>Safety & Compliance (EV Standards)</td>
+                      <td><span class="badge bg-secondary">Not Started</span></td>
+                      <td><span class="text-muted">Not Available</span></td>
+                    </tr>
+                    <tr>
+                      <td>Eco‑Driving & Energy Efficiency</td>
                       <td><span class="badge bg-secondary">Not Started</span></td>
                       <td><span class="text-muted">Not Available</span></td>
                     </tr>

@@ -27,7 +27,7 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Revenue & Expenses</li>
+            <li class="breadcrumb-item active" aria-current="page">E‑Car Revenue & Expenses</li>
           </ol>
         </div>
       </div>
@@ -44,7 +44,7 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-header bg-success text-white">
-              <h3 class="card-title"><i class="bi bi-cash-coin me-2"></i> Daily Income Reports</h3>
+              <h3 class="card-title"><i class="bi bi-cash-coin me-2"></i> Daily E‑Car Income Reports</h3>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -52,7 +52,7 @@
                   <thead class="table-light">
                     <tr>
                       <th>Date</th>
-                      <th>Total Trips</th>
+                      <th>Total E‑Car Trips</th>
                       <th>Income</th>
                     </tr>
                   </thead>
@@ -83,16 +83,17 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-header bg-primary text-white">
-              <h3 class="card-title"><i class="bi bi-pencil-square me-2"></i> Input Branch Expenses</h3>
+              <h3 class="card-title"><i class="bi bi-pencil-square me-2"></i> Input E‑Car Expenses</h3>
             </div>
             <div class="card-body">
               <form>
                 <div class="mb-3">
                   <label for="expenseType" class="form-label">Expense Type</label>
                   <select class="form-select" id="expenseType">
-                    <option value="fuel">Fuel</option>
+                    <option value="charging">Charging / Electricity</option>
                     <option value="repairs">Repairs</option>
                     <option value="maintenance">Maintenance</option>
+                    <option value="software">Software Update</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
@@ -122,7 +123,7 @@
               <h3 class="card-title"><i class="bi bi-file-earmark-arrow-down me-2"></i> Download Reports</h3>
             </div>
             <div class="card-body text-center">
-              <p>You can download your revenue and expense reports for record-keeping.</p>
+              <p>You can download your E‑Car revenue and expense reports for record-keeping.</p>
               <div class="d-grid gap-2 d-md-block">
                 <button class="btn btn-outline-primary me-2"><i class="bi bi-filetype-csv me-1"></i> Download CSV</button>
                 <button class="btn btn-outline-danger"><i class="bi bi-file-earmark-pdf me-1"></i> Download PDF</button>
@@ -137,6 +138,7 @@
   </div>
   <!--end::App Content-->
 </main>
+
 
 
     <!--end::App Main-->
