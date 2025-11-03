@@ -27,7 +27,7 @@
                 data-accordion="false"
                 id="navigation">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="../franchisee/index.php" class="nav-link active">
                         <i class="nav-icon bi bi-speedometer2"></i>
                         <p>
                             Dashboard
@@ -37,56 +37,56 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/fleet-manage.php" class="nav-link">
                         <i class="nav-icon bi bi-truck"></i>
                         <p>Fleet Management</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/driver-manage.php" class="nav-link">
                         <i class="nav-icon bi bi-person-badge"></i>
                         <p>Driver Management</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/boundary.php" class="nav-link">
                         <i class="nav-icon bi bi-cash-coin"></i>
                         <p>Boundary Payments</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/maintenance.php" class="nav-link">
                         <i class="nav-icon bi bi-tools"></i>
                         <p>Maintenance Tracker</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/revenue.php" class="nav-link">
                         <i class="nav-icon bi bi-graph-up-arrow"></i>
                         <p>Revenue & Expenses</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/report.php" class="nav-link">
                         <i class="nav-icon bi bi-bar-chart"></i>
                         <p>Reports</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/support-center.php" class="nav-link">
                         <i class="nav-icon bi bi-headset"></i>
                         <p>Support Center</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="../franchisee/notif.php" class="nav-link">
                         <i class="nav-icon bi bi-bell"></i>
                         <p>Notifications</p>
                     </a>

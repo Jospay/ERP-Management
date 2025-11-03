@@ -16,146 +16,87 @@
     <?php include('../../includes/sidebarFr.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
-    <main class="app-main">
-      <!--begin::App Content Header-->
-      <div class="app-content-header">
-        <!--begin::Container-->
-        <div class="container-fluid">
-          <!--begin::Row-->
-          <div class="row">
-            <div class="col-sm-6">
-              <h3 class="mb-0">Dashboard</h3>
-            </div>
-            <div class="col-sm-6">
-              <ol class="breadcrumb float-sm-end">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-              </ol>
-            </div>
-          </div>
-          <!--end::Row-->
+<main class="app-main">
+  <!--begin::App Content Header-->
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3 class="mb-0">Notifications</h3>
         </div>
-        <!--end::Container-->
-      </div>
-      <!--end::App Content Header-->
-      <!--begin::App Content-->
-      <div class="app-content">
-        <!--begin::Container-->
-        <div class="container-fluid">
-          <!--begin::Row-->
-          <div class="row">
-            <!--begin::Col-->
-            <div class="row">
-              <div class="col-lg-3 col-6">
-                <div class="small-box text-bg-success">
-                  <div class="inner">
-                    <h3>53<sup class="fs-5">%</sup></h3>
-                    <p>My Active Vehicles</p>
-                  </div>
-                  <i class="bi bi-person-badge small-box-icon"></i>
-                  <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                    More info <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-6">
-                <div class="small-box text-bg-warning">
-                  <div class="inner">
-                    <h3>44</h3>
-                    <p>My Active Drivers</p>
-                  </div>
-                  <i class="bi bi-building small-box-icon text-dark"></i>
-                  <a href="#" class="small-box-footer link-dark link-underline-opacity-0 link-underline-opacity-50-hover">
-                    More info <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-6">
-                <div class="small-box text-bg-danger">
-                  <div class="inner">
-                    <h3>₱65k</h3>
-                    <p>Daily Earnings</p>
-                  </div>
-                  <i class="bi bi-cash-stack small-box-icon"></i>
-                  <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                    More info <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-6">
-                <div class="small-box text-bg-danger">
-                  <div class="inner">
-                    <h3>12</h3>
-                    <p>Pending Boundary Due</p>
-                  </div>
-                  <i class="bi bi-clock-history small-box-icon"></i>
-                  <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                    More info <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-6">
-                <div class="small-box text-bg-primary">
-                  <div class="inner">
-                    <h3>150</h3>
-                    <p> Vehicles Under Maintenance</p>
-                  </div>
-                  <i class="bi bi-truck small-box-icon"></i>
-                  <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                    More info <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!--end::Col-->
-          </div>
-          <!--end::Row-->
-          <!--begin::Row-->
-          <div class="row">
-            <!-- Start col -->
-            <div class="col-lg-6 connectedSortable">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <h3 class="card-title">Sales Value</h3>
-                </div>
-                <div class="card-body">
-                  <div id="revenue-chart"></div>
-                </div>
-              </div>
-              <!-- /.card -->
-              <!-- DIRECT CHAT -->
-
-              <!-- /.direct-chat -->
-            </div>
-            <!-- /.Start col -->
-            <!-- Start col -->
-
-            <div class="col-lg-6 connectedSortable">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <h3 class="card-title">World Map</h3>
-                </div>
-                <div class="card-body">
-                  <div id="world-map" style="height: 300px; border-radius: 8px;"></div>
-                </div>
-              </div>
-            </div>
-
-
-
-            <!-- /.Start col -->
-          </div>
-          <!-- /.row (main row) -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-end">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Notifications</li>
+          </ol>
         </div>
-        <!--end::Container-->
       </div>
-      <!--end::App Content-->
-    </main>
+    </div>
+  </div>
+  <!--end::App Content Header-->
+
+  <!--begin::App Content-->
+  <div class="app-content">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header bg-info text-white">
+              <h3 class="card-title"><i class="bi bi-bell me-2"></i> Recent Notifications</h3>
+            </div>
+            <div class="card-body p-0">
+              <ul class="list-group list-group-flush">
+                <!-- Payment Due Alert -->
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold"><i class="bi bi-credit-card text-danger me-1"></i> Payment Due</div>
+                    Boundary payment of <strong>₱2,000</strong> is overdue. Please settle immediately.
+                  </div>
+                  <span class="badge bg-danger rounded-pill">Overdue</span>
+                </li>
+
+                <!-- Maintenance Reminder -->
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold"><i class="bi bi-tools text-warning me-1"></i> Maintenance Reminder</div>
+                    Vehicle <strong>XYZ-5678</strong> is scheduled for maintenance tomorrow.
+                  </div>
+                  <span class="badge bg-warning text-dark rounded-pill">Reminder</span>
+                </li>
+
+                <!-- New Driver Request Status -->
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold"><i class="bi bi-person-check text-success me-1"></i> Driver Request Approved</div>
+                    New driver <strong>Maria Santos</strong> has been approved and added to your fleet.
+                  </div>
+                  <span class="badge bg-success rounded-pill">Approved</span>
+                </li>
+
+                <!-- General Info -->
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold"><i class="bi bi-info-circle text-info me-1"></i> System Notice</div>
+                    A new version of the fleet management app is available. Please update soon.
+                  </div>
+                  <span class="badge bg-info rounded-pill">New</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-list-ul me-1"></i> View All Notifications</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div><!-- /.container-fluid -->
+  </div>
+  <!--end::App Content-->
+</main>
+
     <!--end::App Main-->
     <!--begin::Footer-->
 
