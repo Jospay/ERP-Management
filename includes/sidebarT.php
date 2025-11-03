@@ -2,7 +2,7 @@
     <!--begin::Sidebar Brand-->
     <div class="sidebar-brand" style="background-color: #004A70;">
         <a href="index.php" class="brand-link">
-            <img src="../../dist/assets/img/AdminLTELogo.png" alt="ERP" class="brand-image opacity-75 shadow" />
+            <!-- <img src="../../dist/assets/img/AdminLTELogo.png" alt="ERP" class="brand-image opacity-75 shadow" /> -->
             <span class="brand-text fw-light">Technician ERP</span>
         </a>
     </div>
