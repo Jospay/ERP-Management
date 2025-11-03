@@ -10,7 +10,7 @@
                 class="brand-image opacity-75 shadow" /> -->
             <!--end::Brand Image-->
             <!--begin::Brand Text-->
-            <span class="brand-text fw-light">ERP</span>
+            <span class="brand-text fw-light">Driver ERP</span>
             <!--end::Brand Text-->
         </a>
         <!--end::Brand Link-->
