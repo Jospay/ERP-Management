@@ -27,52 +27,51 @@
                 data-accordion="false"
                 id="navigation">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="./index.php" class="nav-link ">
                         <i class="nav-icon bi bi-speedometer2"></i>
                         <p>
-                            Dashboard
-                            <i class="nav-arrow bi bi-chevron-right"></i>
+                            Dashboard     
                         </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="./boundary-contracts.php" class="nav-link">
                         <i class="nav-icon bi bi-file-earmark-text"></i>
                         <p>Boundary Contracts</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="./revenue-management.php" class="nav-link">
                         <i class="nav-icon bi bi-cash-coin"></i>
                         <p>Revenue Management</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="./expense-management.php" class="nav-link">
                         <i class="nav-icon bi bi-wallet2"></i>
                         <p>Expense Management</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="./reports-analytics.php" class="nav-link">
                         <i class="nav-icon bi bi-bar-chart-line"></i>
                         <p>Reports & Analytics</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="./support-center.php" class="nav-link">
                         <i class="nav-icon bi bi-headset"></i>
                         <p>Support Center</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="./notifications.php" class="nav-link">
                         <i class="nav-icon bi bi-bell"></i>
                         <p>Notifications</p>
                     </a>
@@ -112,3 +111,17 @@
                         </li>
                     </ul>
                 </li> -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const currentPath = window.location.pathname; 
+    const links = document.querySelectorAll("#navigation .nav-link");
+
+    links.forEach(link => {
+        const href = link.getAttribute("href");
+        if (href && currentPath.endsWith(href.split("/").pop())) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>

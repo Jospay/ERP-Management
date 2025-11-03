@@ -301,9 +301,7 @@
                     </div>
 
                     <div class="md:text-start text-center">
-                        <a href="1.php">
-                            <button class="py-2 sm:px-12 px-5 bg-white text-brand-blue mt-6 rounded-xl sm:text-3xl text-xl">Apply as A Franchise Partner</button>
-                        </a>
+                        <button class="py-2 sm:px-12 px-5 bg-white text-brand-blue mt-6 rounded-xl sm:text-3xl text-xl">Apply as A Franchise Partner</button>
                     </div>
 
                 </div>
