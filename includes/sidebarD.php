@@ -85,7 +85,7 @@
             </li>
 
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="./generate/theme.html" class="nav-link">
                         <i class="nav-icon bi bi-truck"></i>
                         <p>Fleet Management</p>
@@ -177,7 +177,7 @@
                         <i class="nav-icon bi bi-journal-text"></i>
                         <p>Audit Logs</p>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </div>
