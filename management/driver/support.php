@@ -16,139 +16,100 @@
     <?php include('../../includes/sidebarD.php'); ?>
     <!--end::Sidebar-->
     <!--begin::App Main-->
-    <main class="app-main">
-      <!--begin::App Content Header-->
-      <div class="app-content-header">
-        <!--begin::Container-->
-        <div class="container-fluid">
-          <!--begin::Row-->
-          <div class="row">
-            <div class="col-sm-6">
-            <h3 class="mb-0">Dashboard</h3>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-end">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-            </ol>
-          </div>
-          </div>
-          <!--end::Row-->
-          </div>
-          <!--end::Container-->
-          </div>
-          <!--end::App Content Header-->
-
-          <!--begin::App Content-->
-          <div class="app-content">
-            <!--begin::Container-->
-            <div class="container-fluid">
-              <!--begin::Row-->
-              <div class="row">
-                <!--begin::Col-->
-                <div class="row">
-
-                  <!-- Trips -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-primary">
-                      <div class="inner">
-                        <h3>320</h3>
-                        <p>Total Trips Today</p>
-                      </div>
-                      <i class="bi bi-geo-alt small-box-icon"></i>
-                      <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <!-- Income -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-success">
-                      <div class="inner">
-                        <h3>₱120k</h3>
-                        <p>Total Income Today</p>
-                      </div>
-                      <i class="bi bi-cash-coin small-box-icon"></i>
-                      <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <!-- Battery Status -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-warning">
-                      <div class="inner">
-                        <h3>85<sup class="fs-5">%</sup></h3>
-                        <p>Average Battery Status</p>
-                      </div>
-                      <i class="bi bi-battery-charging small-box-icon text-dark fs-1"></i>
-                      <a href="#" class="small-box-footer link-dark link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <!-- Pending Payments (optional to keep) -->
-                  <div class="col-lg-3 col-6">
-                    <div class="small-box text-bg-danger">
-                      <div class="inner">
-                        <h3>12</h3>
-                        <p>Pending Payments</p>
-                      </div>
-                      <i class="bi bi-clock-history small-box-icon"></i>
-                      <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                        More info <i class="bi bi-link-45deg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                </div>
-                <!--end::Col-->
-              </div>
-              <!--end::Row-->
-
-              <!--begin::Row-->
-              <div class="row">
-                <!-- Sales Chart -->
-                <div class="col-lg-6 connectedSortable">
-                  <div class="card mb-4">
-                    <div class="card-header">
-                      <h3 class="card-title">Sales Value</h3>
-                    </div>
-                    <div class="card-body">
-                      <div id="revenue-chart"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- World Map -->
-                <div class="col-lg-6 connectedSortable">
-                  <div class="card mb-4">
-                    <div class="card-header">
-                      <h3 class="card-title">World Map</h3>
-                    </div>
-                    <div class="card-body">
-                      <div id="world-map" style="height: 300px; border-radius: 8px;"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end::Row-->
-            </div>
-            <!--end::Container-->
-          </div>
-          <!--end::App Content-->
-
-            <!-- /.Start col -->
-          </div>
-          <!-- /.row (main row) -->
+<main class="app-main">
+  <!--begin::App Content Header-->
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3 class="mb-0">Support</h3>
         </div>
-        <!--end::Container-->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-end">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Support</li>
+          </ol>
+        </div>
       </div>
-      <!--end::App Content-->
-    </main>
+    </div>
+  </div>
+  <!--end::App Content Header-->
+
+  <!--begin::App Content-->
+  <div class="app-content">
+    <div class="container-fluid">
+
+      <div class="row">
+        <!-- File Issue -->
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <h3 class="card-title"><i class="bi bi-exclamation-triangle me-2"></i> File an Issue</h3>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="issueType" class="form-label">Issue Type</label>
+                  <select class="form-select" id="issueType">
+                    <option value="vehicle">Vehicle</option>
+                    <option value="passenger">Passenger</option>
+                    <option value="payment">Payment</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="issueDetails" class="form-label">Details</label>
+                  <textarea class="form-control" id="issueDetails" rows="4" placeholder="Describe the issue..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger">
+                  <i class="bi bi-send me-1"></i> Submit Issue
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat with Manager -->
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header bg-success text-white">
+              <h3 class="card-title"><i class="bi bi-chat-dots me-2"></i> Chat with Manager</h3>
+            </div>
+            <div class="card-body" style="height: 300px; overflow-y: auto;">
+              <!-- Example chat messages -->
+              <div class="d-flex mb-3">
+                <div class="flex-shrink-0">
+                  <span class="badge bg-secondary">Manager</span>
+                </div>
+                <div class="flex-grow-1 ms-2">
+                  <div class="p-2 bg-light rounded">Hello, how can I assist you today?</div>
+                </div>
+              </div>
+              <div class="d-flex mb-3 justify-content-end">
+                <div class="flex-grow-1 me-2 text-end">
+                  <div class="p-2 bg-primary text-white rounded">I need help with a payment issue.</div>
+                </div>
+                <div class="flex-shrink-0">
+                  <span class="badge bg-info">You</span>
+                </div>
+              </div>
+              <!-- End example messages -->
+            </div>
+            <div class="card-footer">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Type your message...">
+                <button class="btn btn-success" type="button"><i class="bi bi-send"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div><!-- /.container-fluid -->
+  </div>
+  <!--end::App Content-->
+</main>
+
     <!--end::App Main-->
     <!--begin::Footer-->
 

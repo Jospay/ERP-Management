@@ -27,7 +27,7 @@
                 data-accordion="false"
                 id="navigation">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="../driver/index.php" class="nav-link active">
                         <i class="nav-icon bi bi-speedometer2"></i>
                         <p>
                             Dashboard
@@ -35,6 +35,55 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                <a href="../driver/mytrips.php" class="nav-link">
+                    <i class="nav-icon bi bi-geo-alt"></i>
+                    <p>My Trips</p>
+                </a>
+                </li>
+
+                <li class="nav-item">
+                <a href="../driver/earning.php" class="nav-link">
+                    <i class="nav-icon bi bi-cash-coin"></i>
+                    <p>Earnings</p>
+                </a>
+                </li>
+
+            <li class="nav-item">
+            <a href="../driver/myvehicles.php" class="nav-link">
+                <i class="nav-icon bi bi-car-front"></i>
+                <p>My Vehicles</p>
+            </a>
+            </li>
+
+        <li class="nav-item">
+        <a href="../driver/training.php" class="nav-link">
+            <i class="nav-icon bi bi-mortarboard"></i>
+            <p>Training</p>
+        </a>
+        </li>
+
+            <li class="nav-item">
+            <a href="../driver/violations.php" class="nav-link">
+                <i class="nav-icon bi bi-exclamation-octagon"></i>
+                <p>Violations & Fines</p>
+            </a>
+            </li>
+
+            <li class="nav-item">
+            <a href="../driver/support.php" class="nav-link">
+                <i class="nav-icon bi bi-life-preserver"></i>
+                <p>Support</p>
+            </a>
+            </li>
+
+            <li class="nav-item">
+            <a href="../driver/notif.php" class="nav-link">
+                <i class="nav-icon bi bi-bell"></i>
+                <p>Notifications</p>
+            </a>
+            </li>
+
 
                 <li class="nav-item">
                     <a href="./generate/theme.html" class="nav-link">
