@@ -1,4 +1,4 @@
-<nav class="app-header navbar navbar-expand bg-body" style="background-color: #f0f8ff !important;">
+<nav class="app-header navbar navbar-expand bg-body" style="background-color: #f0f8ff !important`;">
     <!--begin::Container-->
     <div class="container-fluid">
         <!--begin::Start Navbar Links-->
@@ -22,14 +22,13 @@
             </li>
             <!--end::Navbar Search-->
             <!--begin::Messages Dropdown Menu-->
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
                 <a class="nav-link" data-bs-toggle="dropdown" href="#">
                     <i class="bi bi-chat-text"></i>
                     <span class="navbar-badge badge text-bg-danger">3</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                     <a href="#" class="dropdown-item">
-                        <!--begin::Message-->
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <img
@@ -48,11 +47,9 @@
                                 </p>
                             </div>
                         </div>
-                        <!--end::Message-->
                     </a>
                     <div class="dropdown-divider"></div>
                     <a href="#" class="dropdown-item">
-                        <!--begin::Message-->
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <img
@@ -73,11 +70,9 @@
                                 </p>
                             </div>
                         </div>
-                        <!--end::Message-->
                     </a>
                     <div class="dropdown-divider"></div>
                     <a href="#" class="dropdown-item">
-                        <!--begin::Message-->
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <img
@@ -98,12 +93,11 @@
                                 </p>
                             </div>
                         </div>
-                        <!--end::Message-->
                     </a>
                     <div class="dropdown-divider"></div>
                     <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
                 </div>
-            </li>
+            </li> -->
             <!--end::Messages Dropdown Menu-->
             <!--begin::Notifications Dropdown Menu-->
             <li class="nav-item dropdown">
@@ -114,7 +108,7 @@
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                     <span class="dropdown-item dropdown-header">15 Notifications</span>
                     <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">
+                    <!-- <a href="#" class="dropdown-item">
                         <i class="bi bi-envelope me-2"></i> 4 new messages
                         <span class="float-end text-secondary fs-7">3 mins</span>
                     </a>
@@ -122,7 +116,7 @@
                     <a href="#" class="dropdown-item">
                         <i class="bi bi-people-fill me-2"></i> 8 friend requests
                         <span class="float-end text-secondary fs-7">12 hours</span>
-                    </a>
+                    </a> -->
                     <div class="dropdown-divider"></div>
                     <a href="#" class="dropdown-item">
                         <i class="bi bi-file-earmark-fill me-2"></i> 3 new reports
@@ -134,12 +128,12 @@
             </li>
             <!--end::Notifications Dropdown Menu-->
             <!--begin::Fullscreen Toggle-->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="#" data-lte-toggle="fullscreen">
                     <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i>
                     <i data-lte-icon="minimize" class="bi bi-fullscreen-exit" style="display: none"></i>
                 </a>
-            </li>
+            </li> -->
             <!--end::Fullscreen Toggle-->
             <!--begin::User Menu Dropdown-->
             <li class="nav-item dropdown user-menu">
@@ -148,17 +142,17 @@
                         src="../../dist/assets/img/user2-160x160.jpg"
                         class="user-image rounded-circle shadow"
                         alt="User Image" />
-                    <span class="d-none d-md-inline">Admin</span>
+                    <!-- <span class="d-none d-md-inline">Admin</span> -->
                 </a>
                 <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                     <!--begin::User Image-->
                     <li class="user-header text-bg-primary">
                         <img
-                            src="./assets/img/user2-160x160.jpg"
+                            src="../../dist/assets/img/user2-160x160.jpg"
                             class="rounded-circle shadow"
                             alt="User Image" />
                         <p>
-                            Alexander Pierce - Web Developer
+                            Juan Delacruz
                             <small>Member since Nov. 2023</small>
                         </p>
                     </li>
