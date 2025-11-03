@@ -1,4 +1,4 @@
-<nav class="app-header navbar navbar-expand bg-body">
+<nav class="app-header navbar navbar-expand bg-body" style="background-color: #f0f8ff !important;">
     <!--begin::Container-->
     <div class="container-fluid">
         <!--begin::Start Navbar Links-->
