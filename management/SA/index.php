@@ -55,7 +55,7 @@
     <?php include('../../includes/navbar.php'); ?>
     <?php include('../../includes/sidebar.php'); ?>
 
-    <main class="app-main">
+    <main class="app-main" style="background-color: #f0f8ff;">
       <!-- Page Header -->
       <div class="app-content-header">
         <div class="container-fluid">

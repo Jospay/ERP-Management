@@ -49,7 +49,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- /.content-header -->
 
             <!-- Main content -->
-            <div class="content">
+            <div class="content" style="background-color: #f0f8ff;">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-6">
