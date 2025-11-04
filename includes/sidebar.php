@@ -4,13 +4,13 @@
         <!--begin::Brand Link-->
         <a href="./index.html" class="brand-link">
             <!--begin::Brand Image-->
-            <!-- <img
+            <img
                 src="../../dist/assets/img/AdminLTELogo.png"
                 alt="ERP"
-                class="brand-image opacity-75 shadow" /> -->
+                class="brand-image opacity-75 shadow" />
             <!--end::Brand Image-->
             <!--begin::Brand Text-->
-            <span class="brand-text fw-light">Super Admin ERP</span>
+            <span class="brand-text fw-light">ERP</span>
             <!--end::Brand Text-->
         </a>
         <!--end::Brand Link-->
@@ -37,28 +37,28 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="fleet_management.php" class="nav-link">
                         <i class="nav-icon bi bi-truck"></i>
                         <p>Fleet Management</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="driver_management.php" class="nav-link">
                         <i class="nav-icon bi bi-person-badge"></i>
                         <p>Driver Management</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="" class="nav-link">
                         <i class="nav-icon bi bi-building"></i>
                         <p>Franchise Management</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="" class="nav-link">
                         <i class="nav-icon bi bi-cash-stack"></i>
                         <p>
                             Finance / Revenue
@@ -67,13 +67,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="./widgets/small-box.html" class="nav-link">
+                            <a href="" class="nav-link">
                                 <i class="nav-icon bi bi-circle"></i>
                                 <p>Finance</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./widgets/info-box.html" class="nav-link">
+                            <a href="" class="nav-link">
                                 <i class="nav-icon bi bi-circle"></i>
                                 <p>Revenue</p>
                             </a>
@@ -82,49 +82,49 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="gps_tracking.php" class="nav-link">
                         <i class="nav-icon bi bi-geo-alt"></i>
                         <p>GPS Tracking</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="maintenance_tracker.php" class="nav-link">
                         <i class="nav-icon bi bi-tools"></i>
                         <p>Maintenance Tracker</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="violation&fines.php" class="nav-link">
                         <i class="nav-icon bi bi-exclamation-triangle"></i>
                         <p>Violations & Fines</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="report&analitics.php" class="nav-link">
                         <i class="nav-icon bi bi-bar-chart"></i>
                         <p>Reports & Analytics</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="support_center.php" class="nav-link">
                         <i class="nav-icon bi bi-headset"></i>
                         <p>Support Center</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="settings.php" class="nav-link">
                         <i class="nav-icon bi bi-gear"></i>
                         <p>Settings</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a href="auditlogs.php" class="nav-link">
                         <i class="nav-icon bi bi-journal-text"></i>
                         <p>Audit Logs</p>
                     </a>
