@@ -125,7 +125,7 @@
 
                 <button class="py-2 xl:px-12 px-7 bg-white text-brand-blue sm:text-2xl text-xl gap-4 rounded-md flex items-center">
                     <img src="assets/join.png" class="h-8" alt="">
-                    Join as a Franchise
+                    Join as a Franchised
                 </button>
 
                 <button class="py-2 xl:px-12 px-7 bg-white text-brand-blue sm:text-2xl text-xl gap-4 rounded-md flex items-center">
@@ -256,9 +256,9 @@
         <div class="w-full max-w-[1320px] mx-auto">
             <div class="grid grid-cols-12 items-center gap-5">
                 <div class="md:col-span-6 col-span-12">
-                    <h1 class="text-brand-blue text-4xl font-bold">FRANCHISE NOW!</h1>
+                    <h1 class="text-brand-blue text-4xl font-bold">FRANCHISED NOW!</h1>
                     <h1 class="text-4xl font-bold pt-4">OWN A <span class="text-brand-blue">SMART E-TAXI FLEET.</span> MANAGE WITH EASE.</h1>
-                    <p class="pt-4 text-xl">As a Franchise Partner, you can oversee your vehicles, drivers, and boundary payments effortlessly.</p>
+                    <p class="pt-4 text-xl">As a Franchised Partner, you can oversee your vehicles, drivers, and boundary payments effortlessly.</p>
                     <p class="pt-4 text-xl">With our ERP System, you get real-time monitoring, financial transparency, and reliable reports.</p>
                 </div>
 
@@ -301,7 +301,7 @@
                     </div>
 
                     <div class="md:text-start text-center">
-                        <button class="py-2 sm:px-12 px-5 bg-white text-brand-blue mt-6 rounded-xl sm:text-3xl text-xl">Apply as A Franchise Partner</button>
+                        <button class="py-2 sm:px-12 px-5 bg-white text-brand-blue mt-6 rounded-xl sm:text-3xl text-xl">Apply as A Franchised Partner</button>
                     </div>
 
                 </div>
