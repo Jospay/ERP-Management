@@ -1,6 +1,6 @@
 <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
     <!--begin::Sidebar Brand-->
-    <div class="sidebar-brand" style="background-color: #004A70;">
+    <div class="sidebar-brand" style="background-color: #005dcf;">
         <!--begin::Brand Link-->
         <a href="./index.html" class="brand-link">
             <!--begin::Brand Image-->
@@ -17,7 +17,7 @@
     </div>
     <!--end::Sidebar Brand-->
     <!--begin::Sidebar Wrapper-->
-    <div class="sidebar-wrapper" style="background-color: #004A70;">
+    <div class="sidebar-wrapper" style="background-color: #005dcf;">
         <nav class="mt-2">
             <ul
                 class="nav sidebar-menu flex-column"
